@@ -1,0 +1,1088 @@
+## Перемещение
+  ✓ \Delta\vec r=\vec r-\vec r_0=(\Delta x,\Delta y,\Delta z)
+  ✗ \Delta\vec r=\vec r_0-\vec r
+  ✗ \Delta\vec r=\vec r\cdot\vec r_0
+  ✗ \Delta\vec r=\frac{\vec r-\vec r_0}{t}
+  ✗ \Delta\vec r=\vec r+\vec r_0=(\Delta x,\Delta y,\Delta z)
+## Сложение перемещений
+  ✓ \Delta\vec r_1=\Delta\vec r_2+\Delta\vec r_0
+  ✗ \Delta\vec r_1=\Delta\vec r_2\cdot\Delta\vec r_0
+  ✗ \Delta\vec r_0=\Delta\vec r_1+\Delta\vec r_2
+  ✗ \Delta\vec r_1=\frac{\Delta\vec r_2+\Delta\vec r_0}{2}
+  ✗ \Delta\vec r_1=\Delta\vec r_2-\Delta\vec r_0
+## Скорость (определение)
+  ✓ \vec v=\lim_{\Delta t\to0}\frac{\Delta\vec r}{\Delta t}=\vec r\,'_t,\quad v_x=x'_t
+  ✗ \vec v=\lim_{\Delta t\to0}\frac{\Delta t}{\Delta\vec r}=\vec r\,'_t,\quad v_x=x'_t
+  ✗ \vec v=\lim_{\Delta t\to0}{\Delta\vec r}\cdot {\Delta t}=\vec r\,'_t,\quad v_x=x'_t
+  ✗ \vec v=\lim_{\Delta t\to0}\frac{\Delta\vec r}{\Delta t}=\vec r\,'_t,\quad v_x={x'_t}^2
+## Средняя скорость
+  ✓ \langle\vec v\rangle=\frac{\Delta\vec r}{\Delta t}
+  ✗ \langle\vec v\rangle=\frac{\vec v+\vec v_0}{2}
+  ✗ \langle\vec v\rangle=\frac{\Delta\vec r}{2\Delta t}
+  ✗ \langle\vec v\rangle=\frac{\Delta t}{\Delta\vec r}
+  ✗ \langle\vec v\rangle={\Delta\vec r}\cdot {\Delta t}
+## Сложение скоростей (Галилей)
+  ✓ \vec v_{\text{абс}}=\vec v_{\text{отн}}+\vec v_{\text{со}}
+  ✗ \vec v_{\text{отн}}=\vec v_{\text{абс}}+\vec v_{\text{со}}
+  ✗ \vec v_{\text{со}}=\vec v_{\text{абс}}+\vec v_{\text{отн}}
+  ✗ \vec v_{\text{абс}}=\vec v_{\text{отн}}\cdot\vec v_{\text{со}}
+  ✗ \vec v_{\text{абс}}=\vec v_{\text{отн}}-\vec v_{\text{со}}
+## Ускорение (определение)
+  ✓ \vec a=\lim_{\Delta t\to0}\frac{\Delta\vec v}{\Delta t}=\vec v\,'_t,\quad a_x=(v_x)'_t
+  ✗ \vec a=\lim_{\Delta t\to0}\frac{\Delta\vec r}{\Delta t}=\vec r\,'_t
+  ✗ \vec a=\lim_{\Delta t\to0}\frac{\Delta\vec v}{\Delta t^2}=\vec v\,'_t
+  ✗ \vec a=\lim_{\Delta t\to0}\frac{\Delta t}{\Delta\vec v}=\vec v\,'_t,\quad a_x=(v_x)'_t
+  ✗ \vec a=\lim_{\Delta t\to0}{\Delta\vec v}\cdot {\Delta t}=\vec v\,'_t,\quad a_x=(v_x)'_t
+## Равномерное движение
+  ✓ x(t)=x_0+v_{x}t,\quad v_x=\text{const}
+  ✗ x(t)=x_0+\frac{v_xt^2}{2},\quad v_x=\text{const}
+  ✗ x(t)=v_xt-x_0,\quad v_x=\text{const}
+  ✗ x(t)=x_0+\frac{v_x}{t},\quad v_x=\text{const}
+  ✗ x(t)=x_0-v_{x}t,\quad v_x=\text{const}
+## Равноускоренное: координата
+  ✓ x(t)=x_0+v_{0x}t+\frac{a_xt^2}{2}
+  ✗ x(t)=x_0+v_{0x}t+\frac{2}{a_xt^2}
+  ✗ x(t)=x_0+v_{0x}t+{a_xt^2}
+  ✗ x(t)=x_0+v_{0x}t+\frac{a_xt}{2}
+  ✗ x(t)=x_0-v_{0x}t+\frac{a_xt^2}{2}
+  ✗ x(t)=x_0+v_{0x}t-\frac{a_xt^2}{2}
+## Равноускоренное: скорость
+  ✓ v_x(t)=v_{0x}+a_xt,\quad a_x=\text{const}
+  ✗ v_x(t)=v_{0x}+\frac{a_xt^2}{2},\quad a_x=\text{const}
+  ✗ v_x(t)=v_{0x}+\frac{a_x}{t},\quad a_x=\text{const}
+  ✗ v_x(t)=v_{0x}t+a_x,\quad a_x=\text{const}
+  ✗ v_x(t)=v_{0x}-a_xt,\quad a_x=\text{const}
+## Ускорение через скорости
+  ✓ a_x=\frac{v_x-v_{0x}}{t}
+  ✗ a_x=\frac{v_x+v_{0x}}{2t}
+  ✗ a_x=(v_x-v_{0x})\,t
+  ✗ a_x=\frac{t}{v_x-v_{0x}}
+  ✗ a_x=\frac{v_x+v_{0x}}{t}
+## Формула без времени
+  ✓ v_{2x}^2-v_{1x}^2=2a_x(x_2-x_1)
+  ✗ v_{2x}-v_{1x}^2=2a_x(x_2-x_1)
+  ✗ v_{2x}^2+v_{1x}^2=2a_x(x_2-x_1)
+  ✗ v_{2x}^2-v_{1x}^2=a_x(x_2-x_1)
+  ✗ v_{2x}^2-v_{1x}=2a_x(x_2-x_1)
+  ✗ v_{2x}^2-v_{1x}^2=2a_x(x_2+x_1)
+## Путь (движение в одну сторону)
+  ✓ S=\frac{v_1+v_2}{2}\,t
+  ✗ S=\frac{2}{v_1+v_2}\,t
+  ✗ S={v_1+v_2}\,t
+  ✗ S=\frac{v_1-v_2}{2}\,t
+## Средняя скорость (равноуск.)
+  ✓ \langle v_x\rangle=\frac{v_x+v_{0x}}{2}
+  ✗ \langle v_x\rangle=\frac{2}{v_x+v_{0x}}
+  ✗ \langle v_x\rangle={v_x+v_{0x}}
+  ✗ \langle v_x\rangle=\frac{v_x-v_{0x}}{2}
+## Свободное падение с высоты h: время
+  ✓ t=\sqrt{\frac{2h}{g}}
+  ✗ t=\sqrt{\frac{g}{2h}}
+  ✗ t=\sqrt{{2h}\cdot g}
+  ✗ t={\frac{2h}{g}}
+## Свободное падение: конечная скорость
+  ✓ v=\sqrt{2gh}
+  ✗ v=\sqrt{gh}
+  ✗ v=2gh
+  ✗ v=\sqrt{\frac{2h}{g}}
+  ✗ v={2gh}
+## Бросок вверх: время подъёма / полёта
+  ✓ t_{\text{под}}=\frac{v_0}{g},\quad t_{\text{пол}}=\frac{2v_0}{g}
+  ✗ t_{\text{под}}=\frac{g}{v_0},\quad t_{\text{пол}}=\frac{2v_0}{g}
+  ✗ t_{\text{под}}={v_0}\cdot g,\quad t_{\text{пол}}=\frac{2v_0}{g}
+  ✗ t_{\text{под}}=\frac{v_0}{g},\quad t_{\text{пол}}=\frac{g}{2v_0}
+  ✗ t_{\text{под}}=\frac{v_0}{g},\quad t_{\text{пол}}={2v_0}\cdot g
+## Бросок вверх: макс. высота
+  ✓ h_{\max}=\frac{v_0^2}{2g}
+  ✗ h_{\max}=\frac{2g}{v_0^2}
+  ✗ h_{\max}={v_0^2}\cdot {2g}
+  ✗ h_{\max}=\frac{v_0}{2g}
+## Бросок под углом α: координаты
+  ✓ \begin{cases}x=x_0+v_0\cos\alpha\cdot t\\ y=y_0+v_0\sin\alpha\cdot t-\dfrac{gt^2}{2}\end{cases}
+  ✗ \begin{cases}x=x_0+v_0\cos\alpha\cdot t\\ y=y_0+v_0\sin\alpha\cdot t-\dfrac{2}{gt^2}\end{cases}
+  ✗ \begin{cases}x=x_0+v_0\cos\alpha\cdot t\\ y=y_0+v_0\sin\alpha\cdot t-{gt^2}\end{cases}
+  ✗ \begin{cases}x=x_0+v_0\cos\alpha\cdot t\\ y=y_0+v_0\sin\alpha\cdot t-\dfrac{gt}{2}\end{cases}
+  ✗ \begin{cases}x=x_0+v_0\cos\alpha\cdot t\\ y=y_0+v_0\cos\alpha\cdot t-\dfrac{gt^2}{2}\end{cases}
+  ✗ \begin{cases}x=x_0-v_0\cos\alpha\cdot t\\ y=y_0+v_0\sin\alpha\cdot t-\dfrac{gt^2}{2}\end{cases}
+  ✗ \begin{cases}x=x_0+v_0\sin\alpha\cdot t\\ y=y_0+v_0\sin\alpha\cdot t-\dfrac{gt^2}{2}\end{cases}
+  ✗ \begin{cases}x=x_0+v_0\cos\alpha\cdot t\\ y=y_0-v_0\sin\alpha\cdot t-\dfrac{gt^2}{2}\end{cases}
+  ✗ \begin{cases}x=x_0+v_0\cos\alpha\cdot t\\ y=y_0+v_0\sin\alpha\cdot t+\dfrac{gt^2}{2}\end{cases}
+## Бросок под углом α: скорости
+  ✓ \begin{cases}v_x=v_0\cos\alpha\\ v_y=v_0\sin\alpha-gt\end{cases}
+  ✗ \begin{cases}v_x=v_0\cos\alpha\\ v_y=v_0\cos\alpha-gt\end{cases}
+  ✗ \begin{cases}v_x=v_0\cos\alpha\\ v_y=v_0\sin\alpha+gt\end{cases}
+  ✗ \begin{cases}v_x=v_0\sin\alpha\\ v_y=v_0\sin\alpha-gt\end{cases}
+## Бросок под углом: время полёта
+  ✓ t=\frac{2v_0\sin\alpha}{g}
+  ✗ t=\frac{g}{2v_0\sin\alpha}
+  ✗ t={2v_0\sin\alpha}\cdot g
+  ✗ t=\frac{2v_0\cos\alpha}{g}
+## Бросок под углом: макс. высота
+  ✓ h_{\max}=\frac{v_0^2\sin^2\alpha}{2g}
+  ✗ h_{\max}=\frac{2g}{v_0^2\sin^2\alpha}
+  ✗ h_{\max}=\frac{v_0\sin^2\alpha}{2g}
+  ✗ h_{\max}=\frac{v_0^2\cos^2\alpha}{2g}
+  ✗ h_{\max}=\frac{v_0^2\sin\alpha}{2g}
+## Бросок под углом: дальность
+  ✓ L=\frac{v_0^2\sin2\alpha}{g}
+  ✗ L=\frac{g}{v_0^2\sin2\alpha}
+  ✗ L=\frac{v_0\sin2\alpha}{g}
+  ✗ L=\frac{v_0^2\cos2\alpha}{g}
+## Угол поворота (рад)
+  ✓ \varphi=\frac{l}{R}
+  ✗ \varphi=lR
+  ✗ \varphi=\frac Rl
+  ✗ \varphi=\frac{l}{2\pi R}
+  ✗ \varphi=l\cdot R
+## Угловая скорость
+  ✓ \omega=\frac{\varphi}{t}=\frac{2\pi}{T}=2\pi\nu
+  ✗ \omega=\frac{t}{\varphi}=\frac{2\pi}{T}=2\pi\nu
+  ✗ \omega=\varphi\cdot t=\frac{2\pi}{T}=2\pi\nu
+  ✗ \omega=\frac{\varphi}{t}=\frac{2\pi}{T}=\frac{2 \pi}{\nu}
+  ✗ \omega=\frac{\varphi}{t}=\frac{2\pi}{T}=2 \pi \nu^2
+  ✗ \omega=\frac{\varphi}{t}=\frac{\pi}{T}=2\pi\nu
+  ✗ \omega=\frac{\varphi}{t}=\frac{T}{2\pi}=2\pi\nu
+  ✗ \omega=\frac{\varphi}{t}={2\pi}\cdot T=2\pi\nu
+  ✗ \omega=\frac{\varphi}{t}=\frac{2\pi}{T}=\frac{\nu}{2 \pi}
+  ✗ \omega=\frac{\varphi}{t}=\frac{2\pi}{T}=\pi\nu
+## Период и частота
+  ✓ T=\frac1\nu
+  ✗ T=\nu
+  ✗ T=2\pi\nu
+  ✗ T=\frac{2\pi}{\nu}
+## Линейная скорость
+  ✓ v=\omega R=\frac{2\pi R}{T}=2\pi R\nu
+  ✗ v=\omega R=\frac{T}{2\pi R}=2\pi R\nu
+  ✗ v=\omega R={2\pi R}\cdot T=2\pi R\nu
+  ✗ v=\frac{\omega}{R}=\frac{2\pi R}{T}=2\pi R\nu
+  ✗ v=\omega R^2=\frac{2\pi R}{T}=2\pi R\nu
+  ✗ v=\omega R=\frac{\pi R}{T}=2\pi R\nu
+  ✗ v=\frac{R}{\omega}=\frac{2\pi R}{T}=2\pi R\nu
+  ✗ v=\omega R=\frac{2\pi R}{T}=2 \pi R \nu^2
+  ✗ v=\omega R=\frac{2\pi R}{T}=\pi R\nu
+## Центростремительное ускорение
+  ✓ a_{\text{цс}}=\frac{v^2}{R}=\omega^2R=v\omega
+  ✗ a_{\text{цс}}=\frac{R}{v^2}=\omega^2R=v\omega
+  ✗ a_{\text{цс}}={v^2}\cdot R=\omega^2R=v\omega
+  ✗ a_{\text{цс}}=\frac{v^2}{R}=\frac{\omega^2}{R}=v\omega
+  ✗ a_{\text{цс}}=\frac{v^2}{R}=\omega^2 R^2=v\omega
+  ✗ a_{\text{цс}}=\frac{v}{R}=\omega^2R=v\omega
+  ✗ a_{\text{цс}}=\frac{v^2}{R}=\frac{R}{\omega^2}=v\omega
+  ✗ a_{\text{цс}}=\frac{v^2}{R}=\omega^2R=v \omega^2
+  ✗ a_{\text{цс}}=\frac{v^2}{R}=\omega^2R=\frac{v}{\omega}
+## Плотность вещества
+  ✓ \rho=\frac mV
+  ✗ \rho=\frac{m}{V^2}
+  ✗ \rho=\frac{mg}{V}
+  ✗ \rho=\frac{V}{m}
+  ✗ \rho=m\cdot V
+## Принцип суперпозиции сил
+  ✓ \vec F_{\text{равн}}=\vec F_1+\vec F_2+\ldots
+  ✗ \vec F_{\text{равн}}=\vec F_1\cdot\vec F_2\cdot\ldots
+  ✗ \vec F_{\text{равн}}=\frac{\vec F_1+\vec F_2+\ldots}{n}
+  ✗ \vec F_{\text{равн}}=m\,(\vec F_1+\vec F_2+\ldots)
+  ✗ \vec F_{\text{равн}}=\vec F_1-\vec F_2+\ldots
+## Второй закон Ньютона
+  ✓ m\vec a=\vec F_1+\vec F_2+\ldots+\vec F_n
+  ✗ m\vec v=\vec F_1+\vec F_2+\ldots+\vec F_n
+  ✗ \vec a=m(\vec F_1+\vec F_2+\ldots+\vec F_n)
+  ✗ m\vec a=\vec F_1-\vec F_2+\ldots+\vec F_n
+  ✗ m\vec a=\vec F_1+\vec F_2+\ldots-\vec F_n
+## Второй закон (импульсная форма)
+  ✓ \Delta\vec p=\vec F\Delta t
+  ✗ \Delta\vec p=\frac{\vec F}{\Delta t}
+  ✗ \Delta\vec p=\vec F {\Delta t}^2
+  ✗ \Delta\vec p=\frac{\Delta t}{\vec F}
+## Третий закон Ньютона
+  ✓ \vec F_{12}=-\vec F_{21}
+  ✗ \vec F_{12}=\vec F_{21}
+  ✗ \vec F_{12}=2\vec F_{21}
+  ✗ \vec F_{12}+\vec F_{21}=m\vec a
+## Сила тяжести
+  ✓ F_{\text{тяж}}=mg
+  ✗ F_{\text{тяж}}=\frac mg
+  ✗ F_{\text{тяж}}=\frac gm
+  ✗ F_{\text{тяж}}=mg^2
+## Закон всемирного тяготения
+  ✓ F=G\frac{m_1m_2}{R^2}
+  ✗ F=G\frac{R^2}{m_1m_2}
+  ✗ F=G{m_1m_2}\cdot {R^2}
+  ✗ F=G\frac{m_1m_2}{R}
+## Сила тяжести на высоте h
+  ✓ mg=\frac{GMm}{(R_0+h)^2}
+  ✗ mg=\frac{(R_0+h)^2}{GMm}
+  ✗ mg=\frac{GMm}{(R_0+h)}
+  ✗ mg=\frac{GMm}{(R_0-h)^2}
+## g на высоте h
+  ✓ g=\frac{GM}{(R+h)^2}=g_0\Bigl(\frac{R}{R+h}\Bigr)^{2}
+  ✗ g=\frac{(R+h)^2}{GM}=g_0\Bigl(\frac{R}{R+h}\Bigr)^{2}
+  ✗ g=\frac{GM}{(R+h)}=g_0\Bigl(\frac{R}{R+h}\Bigr)^{2}
+  ✗ g=\frac{GM}{(R-h)^2}=g_0\Bigl(\frac{R}{R+h}\Bigr)^{2}
+  ✗ g=\frac{GM}{(R+h)^2}=g_0\Bigl(\frac{R+h}{R}\Bigr)^{2}
+  ✗ g=\frac{GM}{(R+h)^2}=g_0\Bigl(\frac{R}{R+h}\Bigr)
+  ✗ g=\frac{GM}{(R+h)^2}=g_0\Bigl(\frac{R}{R-h}\Bigr)^{2}
+## Первая космическая скорость
+  ✓ v_1=\sqrt{\frac{GM}{R}}=\sqrt{g_0R}
+  ✗ v_1=\sqrt{\frac{R}{GM}}=\sqrt{g_0R}
+  ✗ v_1=\sqrt{{GM}\cdot R}=\sqrt{g_0R}
+  ✗ v_1={\frac{GM}{R}}=\sqrt{g_0R}
+  ✗ v_1=\sqrt{\frac{GM}{R}}={g_0R}
+## Вторая космическая скорость
+  ✓ v_2=\sqrt{\frac{2GM}{R}}=\sqrt2\,v_1
+  ✗ v_2=\sqrt{\frac{R}{2GM}}=\sqrt2\,v_1
+  ✗ v_2=\sqrt{{2GM}\cdot R}=\sqrt2\,v_1
+  ✗ v_2={\frac{2GM}{R}}=\sqrt2\,v_1
+  ✗ v_2=\sqrt{\frac{2GM}{R}}=2\,v_1
+## Закон Гука
+  ✓ F_x=-kx,\quad F_{\text{упр}}=k\Delta l
+  ✗ F_x=-kx,\quad F_{\text{упр}}=\frac{k}{\Delta l}
+  ✗ F_x=-kx,\quad F_{\text{упр}}=k {\Delta l}^2
+  ✗ F_x=kx,\quad F_{\text{упр}}=k\Delta l
+  ✗ F_x=-kx,\quad F_{\text{упр}}=\frac{\Delta l}{k}
+## Жёсткость стержня (модуль Юнга)
+  ✓ k=\frac{ES}{l_0}
+  ✗ k=\frac{El_0}{S}
+  ✗ k=ESl_0
+  ✗ k=\frac{l_0}{ES}
+  ✗ k={ES}\cdot {l_0}
+## Пружины последовательно
+  ✓ \frac1k=\frac1{k_1}+\frac1{k_2}+\ldots
+  ✗ k=k_1+k_2+\ldots
+  ✗ \frac1k=k_1+k_2+\ldots
+  ✗ k=\frac1{k_1}+\frac1{k_2}+\ldots
+  ✗ \frac1k=\frac1{k_1}-\frac1{k_2}+\ldots
+## Пружины параллельно
+  ✓ k=k_1+k_2+\ldots
+  ✗ \frac1k=\frac1{k_1}+\frac1{k_2}+\ldots
+  ✗ k=k_1k_2\ldots
+  ✗ k=\frac{k_1+k_2+\ldots}{n}
+  ✗ k=k_1-k_2+\ldots
+## Сила трения скольжения
+  ✓ F_{\text{тр}}=\mu N
+  ✗ F_{\text{тр}}=\frac{\mu}{N}
+  ✗ F_{\text{тр}}=\mu N^2
+  ✗ F_{\text{тр}}=\rho N
+  ✗ F_{\text{тр}}=\frac{N}{\mu}
+## Сила трения покоя
+  ✓ F_{\text{тр}}\le\mu N
+  ✗ F_{\text{тр}}=\mu mg\ \text{всегда}
+  ✗ F_{\text{тр}}\le\frac{N}{\mu}
+  ✗ F_{\text{тр}}\ge\mu N
+  ✗ F_{\text{тр}}\le\rho N
+## Момент силы
+  ✓ |M|=Fl
+  ✗ |M|=\frac{F}{l}
+  ✗ |M|=F l^2
+  ✗ |M|=\frac{l}{F}
+## Центр масс
+  ✓ \vec r_{\text{ц.м.}}=\frac{m_1\vec r_1+m_2\vec r_2+\ldots}{m_1+m_2+\ldots}
+  ✗ \vec r_{\text{ц.м.}}=\frac{m_1+m_2+\ldots}{m_1\vec r_1+m_2\vec r_2+\ldots}
+  ✗ \vec r_{\text{ц.м.}}=\frac{m_1\vec r_1-m_2\vec r_2+\ldots}{m_1+m_2+\ldots}
+  ✗ \vec r_{\text{ц.м.}}=\frac{m_1\vec r_1+m_2\vec r_2+\ldots}{m_1-m_2+\ldots}
+## Условия равновесия тела
+  ✓ \begin{cases}\vec F_1+\vec F_2+\ldots=0\\ M_1+M_2+\ldots=0\end{cases}
+  ✗ \begin{cases}\vec F_1+\vec F_2+\ldots=m\vec a\\ M_1+M_2+\ldots=0\end{cases}
+  ✗ \begin{cases}\vec F_1+\vec F_2+\ldots=0\\ M_1+M_2+\ldots=\text{max}\end{cases}
+  ✗ \begin{cases}\vec F_1-\vec F_2+\ldots=0\\ M_1+M_2+\ldots=0\end{cases}
+  ✗ \begin{cases}\vec F_1+\vec F_2+\ldots=0\\ M_1-M_2+\ldots=0\end{cases}
+## Давление
+  ✓ p=\frac{F_\perp}{S}
+  ✗ p=\frac{S}{F_\perp}
+  ✗ p={F_\perp}\cdot S
+  ✗ p=\frac{F_\parallel}{S}
+## Давление в жидкости
+  ✓ p=p_0+\rho gh
+  ✗ p=p_0\rho gh
+  ✗ p=p_0+\frac{\rho g}{h}
+  ✗ p=p_0+\rho h
+  ✗ p=p_0-\rho gh
+## Закон Архимеда
+  ✓ \vec F_{\text{Арх}}=-\vec P_{\text{вытесн}},\quad F_{\text{Арх}}=\rho gV_{\text{погр}}
+  ✗ \vec F_{\text{Арх}}=-\vec P_{\text{вытесн}},\quad F_{\text{Арх}}=\frac{\rho g}{V_{\text{погр}}}
+  ✗ \vec F_{\text{Арх}}=-\vec P_{\text{вытесн}},\quad F_{\text{Арх}}=\rho g {V_{\text{погр}}}^2
+  ✗ \vec F_{\text{Арх}}=\vec P_{\text{вытесн}},\quad F_{\text{Арх}}=\rho gV_{\text{погр}}
+  ✗ \vec F_{\text{Арх}}=-\vec P_{\text{вытесн}},\quad F_{\text{Арх}}=\frac{V_{\text{погр}}}{\rho g}
+## Импульс тела
+  ✓ \vec p=m\vec v
+  ✗ \vec p=\frac{m}{\vec v}
+  ✗ \vec p=m\vec a
+  ✗ \vec p=\frac{m\vec v^2}{2}
+  ✗ \vec p=m {\vec v}^2
+  ✗ \vec p=\frac{\vec v}{m}
+## Импульс системы
+  ✓ \vec p=\vec p_1+\vec p_2+\ldots
+  ✗ \vec p=\vec p_1\cdot\vec p_2\cdot\ldots
+  ✗ \vec p=\frac{\vec p_1+\vec p_2+\ldots}{n}
+  ✗ \vec p=(m_1+m_2+\ldots)\,\vec a
+  ✗ \vec p=\vec p_1-\vec p_2+\ldots
+## Изменение импульса системы
+  ✓ \Delta\vec p=\vec F_{1\,\text{внеш}}\Delta t+\vec F_{2\,\text{внеш}}\Delta t+\ldots
+  ✗ \Delta\vec p=\vec F_{\text{внеш}}\cdot t^2
+  ✗ \Delta\vec p=\frac{\vec F_{1\,\text{внеш}}+\vec F_{2\,\text{внеш}}+\ldots}{\Delta t}
+  ✗ \Delta\vec p=\vec F_{1\,\text{внутр}}\Delta t+\vec F_{2\,\text{внутр}}\Delta t+\ldots
+  ✗ \Delta\vec p=\vec F_{1\,\text{внеш}}\Delta t-\vec F_{2\,\text{внеш}}\Delta t+\ldots
+## Закон сохранения импульса
+  ✓ \Delta\vec p=0,\ \text{если}\ \textstyle\sum\vec F_{\text{внеш}}=0
+  ✗ \Delta\vec p=0,\ \text{если}\ \textstyle\sum\vec F_{\text{внутр}}=0
+  ✗ \vec p=0,\ \text{если}\ \textstyle\sum\vec F_{\text{внеш}}=0
+  ✗ \Delta\vec p=0\ \text{всегда}
+## Работа силы
+  ✓ A=F\,\Delta r\cos\alpha=F_x\Delta x
+  ✗ A=F\,\Delta r\cos\alpha=\frac{F_x}{\Delta x}
+  ✗ A=F\,\Delta r\cos\alpha=F_x {\Delta x}^2
+  ✗ A=F\,\Delta r\sin\alpha=F_x\Delta x
+  ✗ A=F\,\Delta r\cos\alpha=\frac{\Delta x}{F_x}
+## Работа силы тяжести
+  ✓ A=mg(h_1-h_2)=-mg\Delta h
+  ✗ A=mg(h_1+h_2)
+  ✗ A=mg\Delta h
+  ✗ A=mg(h_1+h_2)=-mg\Delta h
+  ✗ A=mg(h_1-h_2)=mg\Delta h
+## Работа силы упругости
+  ✓ A=-\frac k2\left(\Delta l_2^2-\Delta l_1^2\right)
+  ✗ A=-\frac{2}{k}\left(\Delta l_2^2-\Delta l_1^2\right)
+  ✗ A=-k\left(\Delta l_2^2-\Delta l_1^2\right)
+  ✗ A=-\frac k2\left(\Delta l_2-\Delta l_1^2\right)
+  ✗ A=\frac k2\left(\Delta l_2^2-\Delta l_1^2\right)
+  ✗ A=-\frac k2\left(\Delta l_2^2-\Delta l_1\right)
+  ✗ A=-\frac k2\left(\Delta l_2^2+\Delta l_1^2\right)
+## Мощность
+  ✓ P=\frac{\Delta A}{\Delta t}=Fv\cos\alpha
+  ✗ P=\frac{\Delta t}{\Delta A}=Fv\cos\alpha
+  ✗ P={\Delta A}\cdot {\Delta t}=Fv\cos\alpha
+  ✗ P=\frac{\Delta A}{\Delta t}=Fv\sin\alpha
+## Кинетическая энергия
+  ✓ E_{\text{кин}}=\frac{mv^2}{2}=\frac{p^2}{2m}
+  ✗ E_{\text{кин}}=\frac{2}{mv^2}=\frac{p^2}{2m}
+  ✗ E_{\text{кин}}={mv^2}=\frac{p^2}{2m}
+  ✗ E_{\text{кин}}=\frac{mv^2}{2}={p^2}\cdot {2m}
+  ✗ E_{\text{кин}}=\frac{mv}{2}=\frac{p^2}{2m}
+  ✗ E_{\text{кин}}=\frac{mv^2}{2}=\frac{2m}{p^2}
+  ✗ E_{\text{кин}}=\frac{mv^2}{2}=\frac{p}{2m}
+## Теорема о кинетической энергии
+  ✓ \Delta E_{\text{кин}}=A_1+A_2+\ldots
+  ✗ \Delta E_{\text{кин}}=-(A_1+A_2+\ldots)
+  ✗ E_{\text{кин}}=A_1+A_2+\ldots
+  ✗ \Delta E_{\text{пот}}=A_1+A_2+\ldots
+  ✗ \Delta E_{\text{кин}}=A_1-A_2+\ldots
+## Работа потенциальных сил
+  ✓ A_{12}=E_{1\,\text{пот}}-E_{2\,\text{пот}}=-\Delta E_{\text{пот}}
+  ✗ A_{12}=E_{2\,\text{пот}}-E_{1\,\text{пот}}
+  ✗ A_{12}=E_{1\,\text{пот}}+E_{2\,\text{пот}}=-\Delta E_{\text{пот}}
+  ✗ A_{12}=E_{1\,\text{пот}}-E_{2\,\text{пот}}=\Delta E_{\text{пот}}
+## Потенц. энергия в поле тяжести
+  ✓ E_{\text{пот}}=mgh
+  ✗ E_{\text{пот}}=\frac{m g}{h}
+  ✗ E_{\text{пот}}=m g h^2
+  ✗ E_{\text{пот}}=\frac{h}{m g}
+## Потенц. энергия пружины
+  ✓ E_{\text{пот}}=\frac{kx^2}{2}
+  ✗ E_{\text{пот}}=\frac{2}{kx^2}
+  ✗ E_{\text{пот}}={kx^2}
+  ✗ E_{\text{пот}}=\frac{kx}{2}
+## Механическая энергия
+  ✓ E_{\text{мех}}=E_{\text{кин}}+E_{\text{пот}}
+  ✗ E_{\text{мех}}=E_{\text{кин}}\cdot E_{\text{пот}}
+  ✗ E_{\text{мех}}=E_{\text{пот}}-E_{\text{кин}}
+  ✗ E_{\text{мех}}=\frac{E_{\text{кин}}+E_{\text{пот}}}{2}
+  ✗ E_{\text{мех}}=E_{\text{кин}}-E_{\text{пот}}
+## Изменение мех. энергии
+  ✓ \Delta E_{\text{мех}}=A_{\text{всех непотенц. сил}}
+  ✗ \Delta E_{\text{мех}}=A_{\text{всех сил}}
+  ✗ \Delta E_{\text{мех}}=A_{\text{силы тяжести}}
+  ✗ \Delta E_{\text{мех}}=-A_{\text{всех потенц. сил}}
+## Закон сохранения энергии
+  ✓ \Delta E_{\text{мех}}=0,\ \text{если}\ A_{\text{непотенц}}=0
+  ✗ \Delta E_{\text{мех}}=0,\ \text{если}\ A_{\text{потенц}}=0
+  ✗ E_{\text{мех}}=0,\ \text{если}\ A_{\text{непотенц}}=0
+  ✗ \Delta E_{\text{кин}}=0,\ \text{если}\ A_{\text{непотенц}}=0
+## Гармонические колебания
+  ✓ x(t)=A\sin(\omega t+\varphi_0)
+  ✗ x(t)=A\omega\sin(\omega t+\varphi_0)
+  ✗ x(t)=A\sin(\omega+\varphi_0 t)
+  ✗ x(t)=A\cos(\omega t+\varphi_0)
+  ✗ x(t)=A\sin(\omega t-\varphi_0)
+## Скорость при колебаниях
+  ✓ v_x=x'_t=A\omega\cos(\omega t+\varphi_0)
+  ✗ v_x={x'_t}^2=A\omega\cos(\omega t+\varphi_0)
+  ✗ v_x=x'_t=A\omega\sin(\omega t+\varphi_0)
+  ✗ v_x=x'_t=A\omega\cos(\omega t-\varphi_0)
+## Ускорение при колебаниях
+  ✓ a_x=-\omega^2x\ \Rightarrow\ a_x+\omega^2x=0
+  ✗ a_x=-\omega x
+  ✗ a_x=-\frac{x}{\omega^2}
+  ✗ a_x=\omega^2x\ \Rightarrow\ a_x+\omega^2x=0
+  ✗ a_x=-\omega^2x\ \Rightarrow\ a_x-\omega^2x=0
+## Динамика колебаний
+  ✓ ma_x=-kx,\quad k=m\omega^2
+  ✗ ma_x=-kx,\quad k=\frac{m}{\omega^2}
+  ✗ ma_x=-kx,\quad k=m\omega
+  ✗ ma_x=kx,\quad k=m\omega^2
+  ✗ ma_x=-kx,\quad k=\frac{\omega^2}{m}
+## Энергия колебаний
+  ✓ \frac{mv^2}{2}+\frac{kx^2}{2}=\frac{mv_{\max}^2}{2}=\frac{kA^2}{2}
+  ✗ \frac{2}{mv^2}+\frac{kx^2}{2}=\frac{mv_{\max}^2}{2}=\frac{kA^2}{2}
+  ✗ {mv^2}+\frac{kx^2}{2}=\frac{mv_{\max}^2}{2}=\frac{kA^2}{2}
+  ✗ \frac{mv}{2}+\frac{kx^2}{2}=\frac{mv_{\max}^2}{2}=\frac{kA^2}{2}
+  ✗ \frac{mv^2}{2}-\frac{kx^2}{2}=\frac{mv_{\max}^2}{2}=\frac{kA^2}{2}
+  ✗ \frac{mv^2}{2}+\frac{2}{kx^2}=\frac{mv_{\max}^2}{2}=\frac{kA^2}{2}
+  ✗ \frac{mv^2}{2}+{kx^2}=\frac{mv_{\max}^2}{2}=\frac{kA^2}{2}
+  ✗ \frac{mv^2}{2}+\frac{kx}{2}=\frac{mv_{\max}^2}{2}=\frac{kA^2}{2}
+  ✗ \frac{mv^2}{2}+\frac{kx^2}{2}=\frac{2}{mv_{\max}^2}=\frac{kA^2}{2}
+  ✗ \frac{mv^2}{2}+\frac{kx^2}{2}={mv_{\max}^2}=\frac{kA^2}{2}
+  ✗ \frac{mv^2}{2}+\frac{kx^2}{2}=\frac{mv_{\max}}{2}=\frac{kA^2}{2}
+## Амплитуды скорости и ускорения
+  ✓ v_{\max}=\omega A,\quad a_{\max}=\omega^2A=\omega v_{\max}
+  ✗ v_{\max}=\frac{\omega}{A},\quad a_{\max}=\omega^2A=\omega v_{\max}
+  ✗ v_{\max}=\omega A^2,\quad a_{\max}=\omega^2A=\omega v_{\max}
+  ✗ v_{\max}=\frac{A}{\omega},\quad a_{\max}=\omega^2A=\omega v_{\max}
+  ✗ v_{\max}=\omega A,\quad a_{\max}=\omega^2 A^2=\omega v_{\max}
+  ✗ v_{\max}=\omega A,\quad a_{\max}=\frac{\omega^2}{A}=\omega v_{\max}
+  ✗ v_{\max}=\omega A,\quad a_{\max}=\omega^2A=\omega {v_{\max}}^2
+  ✗ v_{\max}=\omega A,\quad a_{\max}=\frac{A}{\omega^2}=\omega v_{\max}
+  ✗ v_{\max}=\omega A,\quad a_{\max}=\omega^2A=\frac{\omega}{v_{\max}}
+## Период и частота
+  ✓ T=\frac{2\pi}{\omega}=\frac1\nu
+  ✗ T=\nu
+  ✗ T=2\pi\nu
+  ✗ T=\frac{2\pi}{\nu}
+  ✗ T=\frac{\omega}{2\pi}=\frac1\nu
+  ✗ T={2\pi}\cdot \omega=\frac1\nu
+  ✗ T=\frac{\pi}{\omega}=\frac1\nu
+## Математический маятник
+  ✓ T=2\pi\sqrt{\frac lg},\quad \omega=\sqrt{\frac gl}
+  ✗ T=2\pi\sqrt{\frac{g}{l}},\quad \omega=\sqrt{\frac gl}
+  ✗ T=2\pi\sqrt{l\cdot g},\quad \omega=\sqrt{\frac gl}
+  ✗ T=2\pi{\frac lg},\quad \omega=\sqrt{\frac gl}
+  ✗ T=\pi\sqrt{\frac lg},\quad \omega=\sqrt{\frac gl}
+  ✗ T=2\pi\sqrt{\frac lg},\quad \omega=\sqrt{\frac{l}{g}}
+  ✗ T=2\pi\sqrt{\frac lg},\quad \omega=\sqrt{g\cdot l}
+  ✗ T=2\pi\sqrt{\frac lg},\quad \omega={\frac gl}
+## Пружинный маятник
+  ✓ T=2\pi\sqrt{\frac mk},\quad \omega=\sqrt{\frac km}
+  ✗ T=2\pi\sqrt{\frac{k}{m}},\quad \omega=\sqrt{\frac km}
+  ✗ T=2\pi\sqrt{m\cdot k},\quad \omega=\sqrt{\frac km}
+  ✗ T=2\pi{\frac mk},\quad \omega=\sqrt{\frac km}
+  ✗ T=\pi\sqrt{\frac mk},\quad \omega=\sqrt{\frac km}
+  ✗ T=2\pi\sqrt{\frac mk},\quad \omega=\sqrt{\frac{m}{k}}
+  ✗ T=2\pi\sqrt{\frac mk},\quad \omega=\sqrt{k\cdot m}
+  ✗ T=2\pi\sqrt{\frac mk},\quad \omega={\frac km}
+## Длина волны
+  ✓ \lambda=vT=\frac v\nu
+  ✗ \lambda=vT=\frac{\nu}{v}
+  ✗ \lambda=vT=v\cdot \nu
+  ✗ \lambda=\frac{v}{T}=\frac v\nu
+  ✗ \lambda=v T^2=\frac v\nu
+  ✗ \lambda=\frac{T}{v}=\frac v\nu
+## Количество вещества
+  ✓ \nu=\frac N{N_A}=\frac m\mu
+  ✗ \nu=\frac{N_A}{N}=\frac m\mu
+  ✗ \nu=N\cdot {N_A}=\frac m\mu
+  ✗ \nu=\frac N{N_A}=\frac m\rho
+  ✗ \nu=\frac N{N_A}=\frac{\mu}{m}
+  ✗ \nu=\frac N{N_A}=m\cdot \mu
+## Масса молекулы
+  ✓ m_0=\frac{\mu}{N_A}
+  ✗ m_0=\frac{N_A}{\mu}
+  ✗ m_0=\mu\cdot {N_A}
+  ✗ m_0=\frac{\rho}{N_A}
+## Концентрация молекул
+  ✓ n=\frac NV
+  ✗ n=\frac NV^2
+  ✗ n=\frac{N}{N_A}
+  ✗ n=\frac{V}{N}
+  ✗ n=N\cdot V
+## Основное уравнение МКТ
+  ✓ p=\tfrac13m_0n\overline{v^2}=\tfrac23n\,\overline{\varepsilon}_{\text{пост}}
+  ✗ p=\tfrac13m_0n\overline{v^2}=\tfrac{3}{2}n\,\overline{\varepsilon}_{\text{пост}}
+  ✗ p=\tfrac13m_0n\overline{v}=\tfrac23n\,\overline{\varepsilon}_{\text{пост}}
+  ✗ p=\tfrac12m_0n\overline{v^2}=\tfrac23n\,\overline{\varepsilon}_{\text{пост}}
+  ✗ p=\tfrac13m_0n\overline{v^2}=\tfrac13n\,\overline{\varepsilon}_{\text{пост}}
+## Абсолютная температура
+  ✓ T=t^\circ+273\ \text{К}
+  ✗ T=t^\circ-273\ \text{К}
+  ✗ T=273\ \text{К}-t^\circ
+  ✗ T=\frac{t^\circ}{273}\ \text{К}
+## Средняя кинетическая энергия молекул
+  ✓ \overline{\varepsilon}_{\text{пост}}=\overline{\Bigl(\frac{m_0v^2}{2}\Bigr)}=\frac32kT
+  ✗ \overline{\varepsilon}_{\text{пост}}=\overline{\Bigl(\frac{2}{m_0v^2}\Bigr)}=\frac32kT
+  ✗ \overline{\varepsilon}_{\text{пост}}=\overline{\Bigl({m_0v^2}\Bigr)}=\frac32kT
+  ✗ \overline{\varepsilon}_{\text{пост}}=\overline{\Bigl(\frac{m_0v}{2}\Bigr)}=\frac32kT
+  ✗ \overline{\varepsilon}_{\text{пост}}=\overline{\Bigl(\frac{m_0v^2}{2}\Bigr)}=\frac12kT
+  ✗ \overline{\varepsilon}_{\text{пост}}=\overline{\Bigl(\frac{m_0v^2}{2}\Bigr)}=\frac{2}{3}kT
+  ✗ \overline{\varepsilon}_{\text{пост}}=\overline{\Bigl(\frac{m_0v^2}{2}\Bigr)}=3kT
+## Давление и температура
+  ✓ p=nkT
+  ✗ p=\frac{nk}{T}
+  ✗ p=\frac{kT}{n}
+  ✗ p=nRT
+  ✗ p=n k T^2
+  ✗ p=\frac{T}{n k}
+## Уравнение Менделеева – Клапейрона
+  ✓ pV=\frac m\mu RT=\nu RT=NkT
+  ✗ pV=\frac{\mu}{m} RT=\nu RT=NkT
+  ✗ pV=m\cdot \mu RT=\nu RT=NkT
+  ✗ pV=\frac m\mu RT=\frac{\nu R}{T}=NkT
+  ✗ pV=\frac m\mu RT=\nu R T^2=NkT
+  ✗ pV=\frac m\rho RT=\nu RT=NkT
+  ✗ pV=\frac m\mu RT=\frac{T}{\nu R}=NkT
+  ✗ pV=\frac m\mu RT=\nu RT=N k T^2
+  ✗ pV=\frac m\mu RT=\nu RT=\frac{N k}{T}
+## Уравнение М.–К. для плотности
+  ✓ p=\frac{\rho RT}{\mu}
+  ✗ p=\frac{\mu}{\rho RT}
+  ✗ p={\rho RT}\cdot \mu
+  ✗ p=\frac{\rho RT}{\rho}
+## Объединённый газовый закон
+  ✓ \frac{pV}{T}=\text{const}\ \ (\nu=\text{const})
+  ✗ pVT=\text{const}\ \ (\nu=\text{const})
+  ✗ \frac{pT}{V}=\text{const}\ \ (\nu=\text{const})
+  ✗ \frac{T}{pV}=\text{const}\ \ (\nu=\text{const})
+  ✗ {pV}\cdot T=\text{const}\ \ (\nu=\text{const})
+## Закон Дальтона
+  ✓ p=p_1+p_2+\ldots
+  ✗ p=p_1p_2\ldots
+  ✗ p=\frac{p_1+p_2+\ldots}{n}
+  ✗ \frac1p=\frac1{p_1}+\frac1{p_2}+\ldots
+  ✗ p=p_1-p_2+\ldots
+## Изотерма (T = const)
+  ✓ pV=\text{const}
+  ✗ \frac pV=\text{const}
+  ✗ pT=\text{const}
+  ✗ \frac VT=\text{const}
+## Изохора (V = const)
+  ✓ \frac pT=\text{const}
+  ✗ pT=\text{const}
+  ✗ pV=\text{const}
+  ✗ \frac VT=\text{const}
+  ✗ \frac{T}{p}=\text{const}
+  ✗ p\cdot T=\text{const}
+## Изобара (p = const)
+  ✓ \frac VT=\text{const}
+  ✗ VT=\text{const}
+  ✗ pV=\text{const}
+  ✗ \frac pT=\text{const}
+  ✗ \frac{T}{V}=\text{const}
+  ✗ V\cdot T=\text{const}
+## Относительная влажность
+  ✓ \varphi=\frac{p_{\text{пара}}}{p_{\text{нас}}}=\frac{\rho_{\text{пара}}}{\rho_{\text{нас}}}
+  ✗ \varphi=p_{\text{пара}}-p_{\text{нас}}
+  ✗ \varphi=\frac{p_{\text{пара}}}{\rho_{\text{нас}}}
+  ✗ \varphi=\frac{p_{\text{нас}}}{p_{\text{пара}}}=\frac{\rho_{\text{пара}}}{\rho_{\text{нас}}}
+  ✗ \varphi=\frac{p_{\text{пара}}}{p_{\text{нас}}}=\frac{\rho_{\text{нас}}}{\rho_{\text{пара}}}
+## Внутренняя энергия одноатомного газа
+  ✓ U=\frac32\nu RT=\frac32NkT=\frac32pV
+  ✗ U=\frac{2}{3}\nu RT=\frac32NkT=\frac32pV
+  ✗ U=3\nu RT=\frac32NkT=\frac32pV
+  ✗ U=\frac12\nu RT=\frac32NkT=\frac32pV
+  ✗ U=\frac32\nu RT=\frac{2}{3}NkT=\frac32pV
+  ✗ U=\frac32\nu RT=3NkT=\frac32pV
+  ✗ U=\frac32\nu RT=\frac12NkT=\frac32pV
+  ✗ U=\frac32\nu RT=\frac32NkT=\frac{2}{3}pV
+  ✗ U=\frac32\nu RT=\frac32NkT=3pV
+  ✗ U=\frac32\nu RT=\frac32NkT=\frac12pV
+## Нагревание / охлаждение
+  ✓ Q=cm\Delta T
+  ✗ Q=\frac{c m}{\Delta T}
+  ✗ Q=c m {\Delta T}^2
+  ✗ Q=\frac{\Delta T}{c m}
+## Плавление / кристаллизация
+  ✓ Q=\pm\lambda m
+  ✗ Q=\pm\frac{\lambda}{m}
+  ✗ Q=\pm\lambda m\Delta T
+  ✗ Q=\pm cm
+## Парообразование / конденсация
+  ✓ Q=\pm Lm
+  ✗ Q=\pm\frac{L}{m}
+  ✗ Q=\pm Lm\Delta T
+  ✗ Q=\pm\frac{m}{L}
+## Сгорание топлива
+  ✓ Q=qm
+  ✗ Q=\frac qm
+  ✗ Q=\frac mq
+  ✗ Q=qm\Delta T
+  ✗ Q=q m^2
+## Работа газа (p = const)
+  ✓ A=p\Delta V
+  ✗ A=\frac{\Delta V}{p}
+  ✗ A=V\Delta p
+  ✗ A=\frac{p}{\Delta V}
+  ✗ A=p {\Delta V}^2
+## Первый закон термодинамики
+  ✓ Q_{12}=\Delta U_{12}+A_{12}
+  ✗ Q_{12}=A_{12}-\Delta U_{12}
+  ✗ \Delta U_{12}=Q_{12}+A_{12}
+  ✗ Q_{12}=\Delta U_{12}\cdot A_{12}
+  ✗ Q_{12}=\Delta U_{12}-A_{12}
+## Адиабатный процесс
+  ✓ Q=0\ \Rightarrow\ A_{12}=-\Delta U_{12}
+  ✗ \Delta U=0\ \Rightarrow\ A_{12}=Q_{12}
+  ✗ Q=0\ \Rightarrow\ A_{12}=0
+  ✗ Q=0 \ \Rightarrow \ {A_{12}}^2=-\Delta U_{12}
+  ✗ Q=0\ \Rightarrow\ A_{12}=\Delta U_{12}
+## КПД тепловой машины
+  ✓ \eta=\frac{A_{\text{цикл}}}{Q_{\text{нагр}}}=1-\frac{|Q_{\text{хол}}|}{Q_{\text{нагр}}}
+  ✗ \eta=\frac{Q_{\text{нагр}}}{A_{\text{цикл}}}=1-\frac{|Q_{\text{хол}}|}{Q_{\text{нагр}}}
+  ✗ \eta=\frac{A_{\text{цикл}}}{Q_{\text{нагр}}}=1+\frac{|Q_{\text{хол}}|}{Q_{\text{нагр}}}
+  ✗ \eta=\frac{A_{\text{цикл}}}{Q_{\text{нагр}}}=1-\frac{Q_{\text{нагр}}}{|Q_{\text{хол}}|}
+## КПД цикла Карно
+  ✓ \eta_{\max}=\frac{T_{\text{нагр}}-T_{\text{хол}}}{T_{\text{нагр}}}=1-\frac{T_{\text{хол}}}{T_{\text{нагр}}}
+  ✗ \eta_{\max}=\frac{T_{\text{нагр}}}{T_{\text{нагр}}-T_{\text{хол}}}=1-\frac{T_{\text{хол}}}{T_{\text{нагр}}}
+  ✗ \eta_{\max}=\frac{T_{\text{нагр}}+T_{\text{хол}}}{T_{\text{нагр}}}=1-\frac{T_{\text{хол}}}{T_{\text{нагр}}}
+  ✗ \eta_{\max}=\frac{T_{\text{нагр}}-T_{\text{хол}}}{T_{\text{нагр}}}=1-\frac{T_{\text{нагр}}}{T_{\text{хол}}}
+  ✗ \eta_{\max}=\frac{T_{\text{нагр}}-T_{\text{хол}}}{T_{\text{нагр}}}=1+\frac{T_{\text{хол}}}{T_{\text{нагр}}}
+## Уравнение теплового баланса
+  ✓ Q_1+Q_2+Q_3+\ldots=0
+  ✗ Q_1=Q_2=Q_3=\ldots
+  ✗ Q_1Q_2Q_3\ldots=0
+  ✗ Q_1-Q_2+Q_3+\ldots=0
+  ✗ Q_1+Q_2-Q_3+\ldots=0
+## Закон Кулона
+  ✓ F=k\frac{|q_1||q_2|}{\varepsilon r^2}=\frac{1}{4\pi\varepsilon\varepsilon_0}\cdot\frac{|q_1||q_2|}{r^2}
+  ✗ F=k\frac{\varepsilon r^2}{|q_1||q_2|}=\frac{1}{4\pi\varepsilon\varepsilon_0}\cdot\frac{|q_1||q_2|}{r^2}
+  ✗ F=k\frac{|q_1||q_2|}{\varepsilon r^2}=\frac{1}{4\pi\varepsilon\varepsilon_0}\cdot{|q_1||q_2|}\cdot {r^2}
+  ✗ F=k\frac{|q_1||q_2|}{\varepsilon r}=\frac{1}{4\pi\varepsilon\varepsilon_0}\cdot\frac{|q_1||q_2|}{r^2}
+  ✗ F=k\frac{|q_1||q_2|}{\varepsilon r^2}=\frac{1}{4\pi\varepsilon\varepsilon_0}\cdot\frac{r^2}{|q_1||q_2|}
+  ✗ F=k\frac{|q_1||q_2|}{\varepsilon r^2}=\frac{1}{4\pi\varepsilon\varepsilon_0}\cdot\frac{|q_1||q_2|}{r}
+## Напряжённость поля
+  ✓ \vec E=\frac{\vec F}{q}
+  ✗ \vec E=q\vec F
+  ✗ \vec E=\frac{\vec F}{q^2}
+  ✗ \vec E=\frac{q}{\vec F}
+  ✗ \vec E={\vec F}\cdot q
+## Поле точечного заряда
+  ✓ E=k\frac{|q|}{r^2}
+  ✗ E=k\frac{r^2}{|q|}
+  ✗ E=k{|q|}\cdot {r^2}
+  ✗ E=k\frac{|q|}{r}
+## Потенциал точечного заряда
+  ✓ \varphi=k\frac{q}{r}
+  ✗ \varphi=k\frac{q}{r^2}
+  ✗ \varphi=k\frac{q^2}{r}
+  ✗ \varphi=k\frac{r}{q}
+  ✗ \varphi=kq\cdot r
+## Энергия взаимодействия зарядов
+  ✓ W=k\frac{q_1q_2}{r}
+  ✗ W=k\frac{q_1q_2}{r^2}
+  ✗ W=k\frac{q_1+q_2}{r}
+  ✗ W=k\frac{r}{q_1q_2}
+  ✗ W=k{q_1q_2}\cdot r
+## Принцип суперпозиции
+  ✓ \begin{array}{l}\vec E=\vec E_1+\vec E_2+\ldots\\ \varphi=\varphi_1+\varphi_2+\ldots\end{array}
+  ✗ \begin{array}{l}\vec E=\vec E_1\cdot\vec E_2\cdot\ldots\\ \varphi=\varphi_1+\varphi_2+\ldots\end{array}
+  ✗ \begin{array}{l}\vec E=\vec E_1+\vec E_2+\ldots\\ \varphi=\varphi_1\varphi_2\ldots\end{array}
+  ✗ \begin{array}{l}\vec E=\vec E_1-\vec E_2+\ldots\\ \varphi=\varphi_1+\varphi_2+\ldots\end{array}
+  ✗ \begin{array}{l}\vec E=\vec E_1+\vec E_2+\ldots\\ \varphi=\varphi_1-\varphi_2+\ldots\end{array}
+## Потенциальная энергия заряда
+  ✓ W=q\varphi
+  ✗ W=\frac{\varphi}{q}
+  ✗ W=\frac q\varphi
+  ✗ W=q\varphi^2
+## Потенциал
+  ✓ \varphi=\frac Wq
+  ✗ \varphi=\frac{W}{q^2}
+  ✗ \varphi=\frac{F}{q}
+  ✗ \varphi=\frac{q}{W}
+  ✗ \varphi=W\cdot q
+## Работа поля
+  ✓ A_{12}=q(\varphi_1-\varphi_2)=qU=-\Delta W
+  ✗ A_{12}=q(\varphi_1-\varphi_2)=\frac{q}{U}=-\Delta W
+  ✗ A_{12}=q(\varphi_1-\varphi_2)=q U^2=-\Delta W
+  ✗ A_{12}=q(\varphi_1+\varphi_2)=qU=-\Delta W
+  ✗ A_{12}=q(\varphi_1-\varphi_2)=\frac{U}{q}=-\Delta W
+  ✗ A_{12}=q(\varphi_1-\varphi_2)=qU=\Delta W
+## Однородное поле
+  ✓ U=Ed
+  ✗ U=\frac Ed
+  ✗ U=\frac dE
+  ✗ U=Ed^2
+## Проводник в поле
+  ✓ E_{\text{внутри}}=0,\quad \varphi=\text{const}
+  ✗ E_{\text{внутри}}=\text{max},\quad \varphi=0
+  ✗ E_{\text{внутри}}=0,\quad \varphi=0
+  ✗ E_{\text{внутри}}=\text{const}\neq0,\quad \varphi=\text{const}
+## Электроёмкость
+  ✓ C=\frac qU
+  ✗ C=\frac{q}{U^2}
+  ✗ C=\frac{q^2}{2U}
+  ✗ C=\frac{U}{q}
+  ✗ C=q\cdot U
+## Плоский конденсатор
+  ✓ C=\frac{\varepsilon\varepsilon_0S}{d}
+  ✗ C=\frac{\varepsilon\varepsilon_0d}{S}
+  ✗ C=\varepsilon\varepsilon_0Sd
+  ✗ C=\frac{\varepsilon_0S}{\varepsilon d}
+  ✗ C=\frac{d}{\varepsilon\varepsilon_0S}
+## Энергия конденсатора
+  ✓ W=\frac{qU}{2}=\frac{CU^2}{2}=\frac{q^2}{2C}
+  ✗ W=\frac{2}{qU}=\frac{CU^2}{2}=\frac{q^2}{2C}
+  ✗ W={qU}=\frac{CU^2}{2}=\frac{q^2}{2C}
+  ✗ W=\frac{qU}{2}=\frac{CU^2}{2}={q^2}\cdot {2C}
+  ✗ W=\frac{qU}{2}=\frac{CU}{2}=\frac{q^2}{2C}
+  ✗ W=\frac{qU}{2}=\frac{2}{CU^2}=\frac{q^2}{2C}
+  ✗ W=\frac{qU}{2}={CU^2}=\frac{q^2}{2C}
+  ✗ W=\frac{qU}{2}=\frac{CU^2}{2}=\frac{q}{2C}
+  ✗ W=\frac{qU}{2}=\frac{CU^2}{2}=\frac{2C}{q^2}
+## Конденсаторы параллельно
+  ✓ U_1=U_2,\ \ q=q_1+q_2,\ \ C=C_1+C_2
+  ✗ U_1={U_2}^2,\ \ q=q_1+q_2,\ \ C=C_1+C_2
+  ✗ U_1=U_2,\ \ q=q_1-q_2,\ \ C=C_1+C_2
+  ✗ U_1=U_2,\ \ q=q_1+q_2,\ \ C=C_1-C_2
+## Конденсаторы последовательно
+  ✓ q_1=q_2,\ \ U=U_1+U_2,\ \ \frac1C=\frac1{C_1}+\frac1{C_2}
+  ✗ q_1={q_2}^2,\ \ U=U_1+U_2,\ \ \frac1C=\frac1{C_1}+\frac1{C_2}
+  ✗ q_1=q_2,\ \ U=U_1-U_2,\ \ \frac1C=\frac1{C_1}+\frac1{C_2}
+  ✗ q_1=q_2,\ \ U=U_1+U_2,\ \ \frac1C=\frac1{C_1}-\frac1{C_2}
+## Сила тока
+  ✓ I=\frac{\Delta q}{\Delta t},\quad q=It
+  ✗ I=\frac{\Delta t}{\Delta q},\quad q=It
+  ✗ I={\Delta q}\cdot {\Delta t},\quad q=It
+  ✗ I=\frac{\Delta q}{\Delta t},\quad q=\frac{I}{t}
+  ✗ I=\frac{\Delta q}{\Delta t},\quad q=I t^2
+  ✗ I=\frac{\Delta q}{\Delta t},\quad q=\frac{t}{I}
+## Закон Ома для участка цепи
+  ✓ I=\frac UR
+  ✗ I=\frac{U}{R^2}
+  ✗ I=\frac{U}{R+r}\ \text{на любом участке}
+  ✗ I=\frac{R}{U}
+  ✗ I=U\cdot R
+## Сопротивление проводника
+  ✓ R=\rho\frac lS
+  ✗ R=\frac{\rho}{lS}
+  ✗ R=\rho lS
+  ✗ R=\frac{l}{\rho S}
+  ✗ R=\rho\frac{S}{l}
+## ЭДС источника
+  ✓ \mathcal E=\frac{A_{\text{стор}}}{q}
+  ✗ \mathcal E=A_{\text{стор}}\,q
+  ✗ \mathcal E=\frac{A_{\text{стор}}}{t}
+  ✗ \mathcal E=\frac{q}{A_{\text{стор}}}
+## Закон Ома для полной цепи
+  ✓ I=\frac{\mathcal E}{R+r},\quad \mathcal E=IR+Ir
+  ✗ I=\frac{R+r}{\mathcal E},\quad \mathcal E=IR+Ir
+  ✗ I=\frac{\mathcal E}{R-r},\quad \mathcal E=IR+Ir
+  ✗ I=\frac{\mathcal E}{R+r},\quad \mathcal E=IR-Ir
+## Последовательное соединение
+  ✓ I_1=I_2,\ \ U=U_1+U_2,\ \ R=R_1+R_2
+  ✗ I_1={I_2}^2,\ \ U=U_1+U_2,\ \ R=R_1+R_2
+  ✗ I_1=I_2,\ \ U=U_1-U_2,\ \ R=R_1+R_2
+  ✗ I_1=I_2,\ \ U=U_1+U_2,\ \ R=R_1-R_2
+## Параллельное соединение
+  ✓ U_1=U_2,\ \ I=I_1+I_2,\ \ \frac1R=\frac1{R_1}+\frac1{R_2}
+  ✗ U_1={U_2}^2,\ \ I=I_1+I_2,\ \ \frac1R=\frac1{R_1}+\frac1{R_2}
+  ✗ U_1=U_2,\ \ I=I_1-I_2,\ \ \frac1R=\frac1{R_1}+\frac1{R_2}
+  ✗ U_1=U_2,\ \ I=I_1+I_2,\ \ \frac1R=\frac1{R_1}-\frac1{R_2}
+## Работа тока
+  ✓ A=IUt
+  ✗ A=\frac{IU}{t}
+  ✗ A=\frac{Ut}{I}
+  ✗ A=IRt
+  ✗ A=I U t^2
+  ✗ A=\frac{t}{I U}
+## Закон Джоуля – Ленца
+  ✓ Q=I^2Rt=IUt=\frac{U^2}{R}t
+  ✗ Q=I^2Rt=IUt=\frac{R}{U^2}t
+  ✗ Q=I^2Rt=IUt={U^2}\cdot Rt
+  ✗ Q=\frac{I^2 R}{t}=IUt=\frac{U^2}{R}t
+  ✗ Q=I^2 R t^2=IUt=\frac{U^2}{R}t
+  ✗ Q=IRt=IUt=\frac{U^2}{R}t
+  ✗ Q=\frac{t}{I^2 R}=IUt=\frac{U^2}{R}t
+  ✗ Q=I^2Rt=I U t^2=\frac{U^2}{R}t
+  ✗ Q=I^2Rt=IUt=\frac{U}{R}t
+## Мощность тока
+  ✓ P=IU=I^2R=\frac{U^2}{R}
+  ✗ P=IU=I^2R=\frac{R}{U^2}
+  ✗ P=IU=I^2R={U^2}\cdot R
+  ✗ P=\frac{I}{U}=I^2R=\frac{U^2}{R}
+  ✗ P=I U^2=I^2R=\frac{U^2}{R}
+  ✗ P=IU=IR=\frac{U^2}{R}
+  ✗ P=\frac{U}{I}=I^2R=\frac{U^2}{R}
+  ✗ P=IU=I^2 R^2=\frac{U^2}{R}
+  ✗ P=IU=I^2R=\frac{U}{R}
+## Мощность источника
+  ✓ P_{\mathcal E}=\mathcal EI
+  ✗ P_{\mathcal E}=\frac{\mathcal E}{I}
+  ✗ P_{\mathcal E}=\mathcal EI^2
+  ✗ P_{\mathcal E}=\frac{I}{\mathcal E}
+## КПД источника
+  ✓ \eta=\frac{R}{R+r}
+  ✗ \eta=\frac{r}{R+r}
+  ✗ \eta=\frac{R}{r}
+  ✗ \eta=\frac{R+r}{R}
+  ✗ \eta=\frac{R}{R-r}
+## Суперпозиция магнитных полей
+  ✓ \vec B=\vec B_1+\vec B_2+\ldots
+  ✗ \vec B=\vec B_1\cdot\vec B_2\cdot\ldots
+  ✗ \vec B=\frac{\vec B_1+\vec B_2+\ldots}{n}
+  ✗ B=\sqrt{B_1+B_2+\ldots}
+  ✗ \vec B=\vec B_1-\vec B_2+\ldots
+## Сила Ампера
+  ✓ F_A=IBl\sin\alpha
+  ✗ F_A=IBl\cos\alpha
+  ✗ F_A=\frac{IB}{l}\sin\alpha
+  ✗ F_A=qBl\sin\alpha
+## Сила Лоренца
+  ✓ F_{\text{Л}}=|q|vB\sin\alpha
+  ✗ F_{\text{Л}}=|q|vB\cos\alpha
+  ✗ F_{\text{Л}}=\frac{|q|B}{v}\sin\alpha
+  ✗ F_{\text{Л}}=IvB\sin\alpha
+## Магнитный поток
+  ✓ \Phi=B_nS=BS\cos\alpha
+  ✗ \Phi=\frac{B_n}{S}=BS\cos\alpha
+  ✗ \Phi=B_n S^2=BS\cos\alpha
+  ✗ \Phi=B_nS=BS\sin\alpha
+  ✗ \Phi=\frac{S}{B_n}=BS\cos\alpha
+## Закон Фарадея
+  ✓ \mathcal E_i=-\frac{\Delta\Phi}{\Delta t}=-\Phi'_t
+  ✗ \mathcal E_i=-\frac{\Delta t}{\Delta\Phi}=-\Phi'_t
+  ✗ \mathcal E_i=-{\Delta\Phi}\cdot {\Delta t}=-\Phi'_t
+  ✗ \mathcal E_i=\frac{\Delta\Phi}{\Delta t}=-\Phi'_t
+  ✗ \mathcal E_i=-\frac{\Delta\Phi}{\Delta t}=\Phi'_t
+## ЭДС в движущемся проводнике
+  ✓ |\mathcal E_i|=Blv\sin\alpha
+  ✗ |\mathcal E_i|=\frac{Bv}{l}\sin\alpha
+  ✗ |\mathcal E_i|=Blv^2\sin\alpha
+  ✗ |\mathcal E_i|=IBl\sin\alpha
+  ✗ |\mathcal E_i|=Blv\cos\alpha
+## Индуктивность
+  ✓ L=\frac\Phi I,\quad \Phi=LI
+  ✗ L=\frac{I}{\Phi},\quad \Phi=LI
+  ✗ L=\Phi\cdot I,\quad \Phi=LI
+  ✗ L=\frac\Phi I,\quad \Phi=\frac{L}{I}
+  ✗ L=\frac\Phi I,\quad \Phi=L I^2
+  ✗ L=\frac\Phi I,\quad \Phi=\frac{I}{L}
+## ЭДС самоиндукции
+  ✓ \mathcal E_{si}=-L\frac{\Delta I}{\Delta t}=-LI'_t
+  ✗ \mathcal E_{si}=-L\frac{\Delta t}{\Delta I}=-LI'_t
+  ✗ \mathcal E_{si}=-L{\Delta I}\cdot {\Delta t}=-LI'_t
+  ✗ \mathcal E_{si}=L\frac{\Delta I}{\Delta t}=-LI'_t
+  ✗ \mathcal E_{si}=-L\frac{\Delta I}{\Delta t}=LI'_t
+## Энергия магнитного поля
+  ✓ W_L=\frac{LI^2}{2}=\frac{\Phi^2}{2L}
+  ✗ W_L=\frac{2}{LI^2}=\frac{\Phi^2}{2L}
+  ✗ W_L={LI^2}=\frac{\Phi^2}{2L}
+  ✗ W_L=\frac{LI^2}{2}={\Phi^2}\cdot {2L}
+  ✗ W_L=\frac{LI}{2}=\frac{\Phi^2}{2L}
+  ✗ W_L=\frac{LI^2}{2}=\frac{2L}{\Phi^2}
+  ✗ W_L=\frac{LI^2}{2}=\frac{\Phi}{2L}
+## Заряд в контуре
+  ✓ q(t)=q_{\max}\sin(\omega t+\varphi_0)
+  ✗ q(t)=q_{\max}\sin(\omega+\varphi_0t)
+  ✗ q(t)=\omega q_{\max}\sin(\omega t+\varphi_0)
+  ✗ q(t)=q_{\max}\cos(\omega t+\varphi_0)
+  ✗ q(t)=q_{\max}\sin(\omega t-\varphi_0)
+## Ток в контуре
+  ✓ I(t)=q'_t=\omega q_{\max}\cos(\omega t+\varphi_0)
+  ✗ I(t)={q'_t}^2=\omega q_{\max}\cos(\omega t+\varphi_0)
+  ✗ I(t)=q'_t=\omega q_{\max}\sin(\omega t+\varphi_0)
+  ✗ I(t)=q'_t=\omega q_{\max}\cos(\omega t-\varphi_0)
+## Формула Томсона
+  ✓ T=2\pi\sqrt{LC},\quad \omega=\frac1{\sqrt{LC}}
+  ✗ T=2\pi{LC},\quad \omega=\frac1{\sqrt{LC}}
+  ✗ T=\pi\sqrt{LC},\quad \omega=\frac1{\sqrt{LC}}
+  ✗ T=2\pi\sqrt{LC},\quad \omega=\frac1{{LC}}
+## Амплитуды заряда и тока
+  ✓ I_{\max}=\omega q_{\max}
+  ✗ I_{\max}=\frac{\omega}{q_{\max}}
+  ✗ I_{\max}=\omega {q_{\max}}^2
+  ✗ I_{\max}=\frac{q_{\max}}{\omega}
+## Энергия в контуре
+  ✓ \frac{CU^2}{2}+\frac{LI^2}{2}=\frac{CU_{\max}^2}{2}=\frac{LI_{\max}^2}{2}
+  ✗ \frac{2}{CU^2}+\frac{LI^2}{2}=\frac{CU_{\max}^2}{2}=\frac{LI_{\max}^2}{2}
+  ✗ {CU^2}+\frac{LI^2}{2}=\frac{CU_{\max}^2}{2}=\frac{LI_{\max}^2}{2}
+  ✗ \frac{CU}{2}+\frac{LI^2}{2}=\frac{CU_{\max}^2}{2}=\frac{LI_{\max}^2}{2}
+  ✗ \frac{CU^2}{2}-\frac{LI^2}{2}=\frac{CU_{\max}^2}{2}=\frac{LI_{\max}^2}{2}
+  ✗ \frac{CU^2}{2}+\frac{2}{LI^2}=\frac{CU_{\max}^2}{2}=\frac{LI_{\max}^2}{2}
+  ✗ \frac{CU^2}{2}+{LI^2}=\frac{CU_{\max}^2}{2}=\frac{LI_{\max}^2}{2}
+  ✗ \frac{CU^2}{2}+\frac{LI}{2}=\frac{CU_{\max}^2}{2}=\frac{LI_{\max}^2}{2}
+  ✗ \frac{CU^2}{2}+\frac{LI^2}{2}=\frac{2}{CU_{\max}^2}=\frac{LI_{\max}^2}{2}
+  ✗ \frac{CU^2}{2}+\frac{LI^2}{2}={CU_{\max}^2}=\frac{LI_{\max}^2}{2}
+  ✗ \frac{CU^2}{2}+\frac{LI^2}{2}=\frac{CU_{\max}}{2}=\frac{LI_{\max}^2}{2}
+## ЭМ волна в вакууме
+  ✓ \vec E\perp\vec B\perp\vec c
+  ✗ \vec E\parallel\vec B\perp\vec c
+  ✗ \vec E\perp\vec B\parallel\vec c
+  ✗ \vec E\parallel\vec B\parallel\vec c
+## Длина ЭМ волны
+  ✓ \lambda=cT=\frac c\nu
+  ✗ \lambda=cT=\frac{\nu}{c}
+  ✗ \lambda=cT=c\cdot \nu
+  ✗ \lambda=\frac{c}{T}=\frac c\nu
+  ✗ \lambda=c T^2=\frac c\nu
+  ✗ \lambda=\frac{T}{c}=\frac c\nu
+## Закон отражения
+  ✓ \alpha=\beta
+  ✗ \alpha=2\beta
+  ✗ \alpha+\beta=90^\circ
+  ✗ \sin\alpha=n\sin\beta
+## Закон преломления
+  ✓ n_1\sin\alpha=n_2\sin\beta
+  ✗ n_1\sin\beta=n_2\sin\alpha
+  ✗ n_1n_2=\sin\alpha\sin\beta
+  ✗ n_1\cos\alpha=n_2\sin\beta
+  ✗ n_1\sin\alpha=n_2\cos\beta
+## Абсолютный показатель преломления
+  ✓ n=\frac cv
+  ✗ n=c-v
+  ✗ n=\frac{c^2}{v^2}
+  ✗ n=\frac{v}{c}
+  ✗ n=c\cdot v
+## Относительный показатель
+  ✓ n_{\text{отн}}=\frac{n_2}{n_1}=\frac{v_1}{v_2}
+  ✗ n_{\text{отн}}=\frac{n_1}{n_2}=\frac{v_1}{v_2}
+  ✗ n_{\text{отн}}={n_2}\cdot {n_1}=\frac{v_1}{v_2}
+  ✗ n_{\text{отн}}=\frac{n_2}{n_1}=\frac{v_2}{v_1}
+  ✗ n_{\text{отн}}=\frac{n_2}{n_1}={v_1}\cdot {v_2}
+## Переход в другую среду
+  ✓ \nu_1=\nu_2,\quad n_1\lambda_1=n_2\lambda_2
+  ✗ \nu_1={\nu_2}^2,\quad n_1\lambda_1=n_2\lambda_2
+  ✗ \nu_1=\nu_2,\quad n_1\lambda_1=\frac{n_2}{\lambda_2}
+  ✗ \nu_1=\nu_2,\quad n_1\lambda_1=n_2 {\lambda_2}^2
+  ✗ \nu_1=\nu_2,\quad n_1\lambda_1=\frac{\lambda_2}{n_2}
+## Полное внутреннее отражение
+  ✓ \sin\alpha_{\text{пр}}=\frac{n_2}{n_1}=\frac{1}{n_{\text{отн}}}
+  ✗ \sin\alpha_{\text{пр}}=\frac{n_1}{n_2}=\frac{1}{n_{\text{отн}}}
+  ✗ \sin\alpha_{\text{пр}}={n_2}\cdot {n_1}=\frac{1}{n_{\text{отн}}}
+  ✗ \cos\alpha_{\text{пр}}=\frac{n_2}{n_1}=\frac{1}{n_{\text{отн}}}
+## Оптическая сила линзы
+  ✓ D=\frac1F
+  ✗ D=F
+  ✗ D=\frac{2}{F}
+  ✗ D=F^2
+## Формула тонкой линзы
+  ✓ \frac1d+\frac1f=\frac1F
+  ✗ \frac1d-\frac1f=F
+  ✗ d+f=F
+  ✗ \frac1d\cdot\frac1f=\frac1F
+## Увеличение линзы
+  ✓ \Gamma=\frac hH=\frac{|f|}{d}
+  ✗ \Gamma=\frac{H}{h}=\frac{|f|}{d}
+  ✗ \Gamma=h\cdot H=\frac{|f|}{d}
+  ✗ \Gamma=\frac hH=\frac{d}{|f|}
+  ✗ \Gamma=\frac hH={|f|}\cdot d
+## Интерференция: максимумы
+  ✓ \Delta=2m\frac\lambda2=m\lambda
+  ✗ \Delta=2m\frac{2}{\lambda}=m\lambda
+  ✗ \Delta=2m\lambda=m\lambda
+  ✗ \Delta=2m\frac\lambda2=\frac{m}{\lambda}
+  ✗ \Delta=2m\frac\lambda2=m \lambda^2
+  ✗ \Delta=m\frac\lambda2=m\lambda
+  ✗ \Delta=2m\frac\lambda2=\frac{\lambda}{m}
+## Интерференция: минимумы
+  ✓ \Delta=(2m+1)\frac\lambda2
+  ✗ \Delta=(2m+1)\frac{2}{\lambda}
+  ✗ \Delta=(2m+1)\lambda
+  ✗ \Delta=(2m-1)\frac\lambda2
+  ✗ \Delta=(m+1)\frac\lambda2
+## Разность хода (опыт Юнга)
+  ✓ \Delta=\frac{ax}{L}
+  ✗ \Delta=\frac{aL}{x}
+  ✗ \Delta=axL
+  ✗ \Delta=\frac{L}{ax}
+  ✗ \Delta={ax}\cdot L
+## Дифракционная решётка
+  ✓ d\sin\varphi_m=m\lambda
+  ✗ d\sin\varphi_m=\frac{m}{\lambda}
+  ✗ d\sin\varphi_m=m \lambda^2
+  ✗ d\cos\varphi_m=m\lambda
+  ✗ d\sin\varphi_m=\frac{\lambda}{m}
+## Формула Планка
+  ✓ E=h\nu=\frac{hc}{\lambda}=pc
+  ✗ E=\frac{h}{\nu}=h c\lambda=\frac pc
+  ✗ E=h\lambda=\frac{hc}{\nu}=pc
+  ✗ E=\frac{h\nu}{2}=\frac{hc}{\lambda}=pc
+  ✗ E=h\nu=\frac{\lambda}{hc}=pc
+  ✗ E=h\nu={hc}\cdot \lambda=pc
+  ✗ E=\frac{h}{\nu}=\frac{hc}{\lambda}=pc
+  ✗ E=h \nu^2=\frac{hc}{\lambda}=pc
+  ✗ E=\frac{\nu}{h}=\frac{hc}{\lambda}=pc
+  ✗ E=h\nu=\frac{hc}{\lambda}=p c^2
+## Импульс фотона
+  ✓ p=\frac Ec=\frac{h\nu}{c}=\frac h\lambda
+  ✗ p=\frac{c}{E}=\frac{h\nu}{c}=\frac h\lambda
+  ✗ p=E\cdot c=\frac{h\nu}{c}=\frac h\lambda
+  ✗ p=\frac Ec=\frac{c}{h\nu}=\frac h\lambda
+  ✗ p=\frac Ec={h\nu}\cdot c=\frac h\lambda
+  ✗ p=\frac Ec=\frac{h\nu}{c}=\frac{\lambda}{h}
+  ✗ p=\frac Ec=\frac{h\nu}{c}=h\cdot \lambda
+## Уравнение Эйнштейна (фотоэффект)
+  ✓ h\nu=A_{\text{вых}}+E_{\text{кин max}}
+  ✗ h\nu=A_{\text{вых}}-E_{\text{кин max}}
+  ✗ h\nu=A_{\text{вых}}\cdot E_{\text{кин max}}
+  ✗ A_{\text{вых}}=h\nu+E_{\text{кин max}}
+## Красная граница фотоэффекта
+  ✓ A_{\text{вых}}=h\nu_{\text{кр}}=\frac{hc}{\lambda_{\text{кр}}}
+  ✗ A_{\text{вых}}=h\nu_{\text{кр}}=\frac{\lambda_{\text{кр}}}{hc}
+  ✗ A_{\text{вых}}=\frac{h}{\nu_{\text{кр}}}=\frac{hc}{\lambda_{\text{кр}}}
+  ✗ A_{\text{вых}}=h {\nu_{\text{кр}}}^2=\frac{hc}{\lambda_{\text{кр}}}
+  ✗ A_{\text{вых}}=\frac{\nu_{\text{кр}}}{h}=\frac{hc}{\lambda_{\text{кр}}}
+## Запирающее напряжение
+  ✓ E_{\text{кин max}}=\frac{mv_{\max}^2}{2}=eU_{\text{зап}}
+  ✗ E_{\text{кин max}}=\frac{2}{mv_{\max}^2}=eU_{\text{зап}}
+  ✗ E_{\text{кин max}}={mv_{\max}^2}=eU_{\text{зап}}
+  ✗ E_{\text{кин max}}=\frac{mv_{\max}^2}{2}=\frac{e}{U_{\text{зап}}}
+  ✗ E_{\text{кин max}}=\frac{mv_{\max}^2}{2}=e {U_{\text{зап}}}^2
+  ✗ E_{\text{кин max}}=\frac{mv_{\max}}{2}=eU_{\text{зап}}
+  ✗ E_{\text{кин max}}=\frac{mv_{\max}^2}{2}=\frac{U_{\text{зап}}}{e}
+## Длина волны де Бройля
+  ✓ \lambda=\frac hp=\frac h{mv}
+  ✗ \lambda=\frac{p}{h}=\frac h{mv}
+  ✗ \lambda=h\cdot p=\frac h{mv}
+  ✗ \lambda=\frac hp=\frac{mv}{h}
+  ✗ \lambda=\frac hp=h\cdot {mv}
+## Энергия покоя
+  ✓ E_0=mc^2
+  ✗ E_0=mc
+  ✗ E_0=\frac{mc^2}{2}
+  ✗ E_0=\frac{mv^2}{2}
+  ✗ E_0=\frac{m}{c^2}
+  ✗ E_0=\frac{c^2}{m}
+## Полная энергия (СТО)
+  ✓ E=\frac{mc^2}{\sqrt{1-v^2/c^2}}
+  ✗ E=\frac{\sqrt{1-v^2/c^2}}{mc^2}
+  ✗ E=\frac{mc}{\sqrt{1-v^2/c^2}}
+  ✗ E=\frac{mc^2}{{1-v^2/c^2}}
+  ✗ E=\frac{mc^2}{\sqrt{1+v^2/c^2}}
+  ✗ E=\frac{mc^2}{\sqrt{1-v/c^2}}
+  ✗ E=\frac{mc^2}{\sqrt{1-v^2/c}}
+## Постулат Бора
+  ✓ h\nu_{mn}=\frac{hc}{\lambda_{mn}}=|E_n-E_m|
+  ✗ h\nu_{mn}=\frac{\lambda_{mn}}{hc}=|E_n-E_m|
+  ✗ h\nu_{mn}={hc}\cdot {\lambda_{mn}}=|E_n-E_m|
+  ✗ h\nu_{mn}=\frac{hc}{\lambda_{mn}}=|E_n+E_m|
+## Уровни атома водорода
+  ✓ E_n=\frac{-13{,}6\ \text{эВ}}{n^2}
+  ✗ E_n=\frac{n^2}{-13{,}6\ \text{эВ}}
+  ✗ E_n=\frac{-13{,}6\ \text{эВ}}{n}
+  ✗ E_n=\frac{13{,}6\ \text{эВ}}{n^2}
+## Дефект массы ядра
+  ✓ \Delta m=Zm_p+(A-Z)m_n-M_{\text{я}}
+  ✗ \Delta m=Zm_p-(A-Z)m_n-M_{\text{я}}
+  ✗ \Delta m=Zm_p+(A+Z)m_n-M_{\text{я}}
+  ✗ \Delta m=Zm_p+(A-Z)m_n+M_{\text{я}}
+## α-распад
+  ✓ {}^A_ZX\to{}^{A-4}_{Z-2}Y+{}^4_2\text{He}
+  ✗ {}^A_ZX\to{}^{A-2}_{Z-4}Y+{}^4_2\text{He}
+  ✗ {}^A_ZX\to{}^{A-4}_{Z+2}Y+{}^4_2\text{He}
+  ✗ {}^A_ZX\to{}^{A+4}_{Z-2}Y+{}^4_2\text{He}
+  ✗ {}^A_ZX\to{}^{A-4}_{Z-2}Y-{}^4_2\text{He}
+## β⁻-распад
+  ✓ {}^A_ZX\to{}^{A}_{Z+1}Y+{}^{0}_{-1}e+\tilde\nu_e
+  ✗ {}^A_ZX\to{}^{A}_{Z-1}Y+{}^{0}_{-1}e+\tilde\nu_e
+  ✗ {}^A_ZX\to{}^{A-1}_{Z}Y+{}^{0}_{-1}e+\tilde\nu_e
+  ✗ {}^A_ZX\to{}^{A}_{Z+1}Y-{}^{0}_{-1}e+\tilde\nu_e
+  ✗ {}^A_ZX\to{}^{A}_{Z+1}Y+{}^{0}_{-1}e-\tilde\nu_e
+## β⁺-распад
+  ✓ {}^A_ZX\to{}^{A}_{Z-1}Y+{}^{0}_{+1}e+\nu_e
+  ✗ {}^A_ZX\to{}^{A}_{Z+1}Y+{}^{0}_{+1}e+\nu_e
+  ✗ {}^A_ZX\to{}^{A-1}_{Z}Y+{}^{0}_{+1}e+\nu_e
+  ✗ {}^A_ZX\to{}^{A}_{Z-1}Y-{}^{0}_{+1}e+\nu_e
+  ✗ {}^A_ZX\to{}^{A}_{Z-1}Y+{}^{0}_{+1}e-\nu_e
+## Закон радиоактивного распада
+  ✓ N(t)=N_0\cdot2^{-t/T},\quad m(t)=m_0\cdot2^{-t/T}
+  ✗ N(t)=\frac{N_0}{2^{-t/T}},\quad m(t)=m_0\cdot2^{-t/T}
+  ✗ N(t)=N_0\cdot2^{t/T},\quad m(t)=m_0\cdot2^{-t/T}
+  ✗ N(t)=\frac{2^{-t/T}}{N_0},\quad m(t)=m_0\cdot2^{-t/T}
+  ✗ N(t)=N_0\cdot2^{-t/T},\quad m(t)=m_0\cdot2^{t/T}
+  ✗ N(t)=N_0\cdot2^{-t/T},\quad m(t)=\frac{m_0}{2^{-t/T}}
+  ✗ N(t)=N_0\cdot2^{-t/T},\quad m(t)=\frac{2^{-t/T}}{m_0}

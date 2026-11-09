@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITLE}}</title>
+<meta name="theme-color" content="{{THEME}}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="{{SHORT}}">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+/*KATEX_CSS*/
+:root{
+  --bg:#f4f5fb;--card:#fff;--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--chip:#eef2ff;
+  --acc:{{THEME}};--acc-ink:#fff;--ok:#16a34a;--ok-bg:#dcfce7;--bad:#dc2626;--bad-bg:#fee2e2;--sel:#e0e7ff;
+  --r:16px;--shadow:0 1px 2px rgba(15,23,42,.06),0 4px 16px rgba(15,23,42,.06);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0b1020;--card:#151b2e;--ink:#e5e7f0;--muted:#94a3b8;--line:#263049;--chip:#1e2640;
+  --acc:#818cf8;--acc-ink:#0b1020;--ok:#4ade80;--ok-bg:#12351f;--bad:#f87171;--bad-bg:#3b1414;--sel:#252f52;
+  --shadow:none;}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{min-height:100dvh;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+.wrap{max-width:640px;margin:0 auto;padding:16px 16px 120px}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+h1{font-size:26px;margin:8px 0 4px;letter-spacing:-.3px}
+.sub{color:var(--muted);margin:0 0 18px;font-size:15px}
+.panel{background:var(--card);border-radius:var(--r);padding:16px;box-shadow:var(--shadow);margin-bottom:14px}
+.panel h3{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+.panel h3 button{font-size:13px;text-transform:none;letter-spacing:0;color:var(--acc);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:8px 12px;border-radius:999px;background:var(--chip);font-size:14px;border:2px solid transparent;display:flex;gap:6px;align-items:center;transition:.15s}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--c,var(--acc));opacity:.35}
+.chip[aria-pressed=true]{border-color:var(--c,var(--acc));background:color-mix(in srgb,var(--c,var(--acc)) 14%,var(--card))}
+.chip[aria-pressed=true] .dot{opacity:1}
+.chip small{color:var(--muted)}
+.seg{display:flex;background:var(--chip);border-radius:12px;padding:4px;gap:4px}
+.seg button{flex:1;padding:9px 6px;border-radius:9px;font-size:14px;color:var(--muted)}
+.seg button[aria-pressed=true]{background:var(--card);color:var(--ink);font-weight:600;box-shadow:var(--shadow)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:6px 0}
+.row+.row{border-top:1px solid var(--line)}
+.row label{font-size:15px}
+.row small{display:block;color:var(--muted);font-size:12.5px}
+.switch{width:46px;height:28px;border-radius:999px;background:var(--line);position:relative;flex:none;transition:.2s}
+.switch::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.switch[aria-checked=true]{background:var(--acc)}
+.switch[aria-checked=true]::after{left:21px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center}
+.stats b{display:block;font-size:22px}
+.stats span{font-size:12px;color:var(--muted)}
+.bar{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(transparent,var(--bg) 30%)}
+.bar .in{max-width:640px;margin:0 auto;display:flex;gap:10px}
+.btn{flex:1;padding:16px;border-radius:14px;background:var(--acc);color:var(--acc-ink);font-weight:700;font-size:17px;transition:.15s}
+.btn:disabled{opacity:.4;cursor:default}
+.btn.ghost{background:var(--card);color:var(--ink);box-shadow:var(--shadow);flex:0 0 auto;padding:16px 18px}
+.btn.ok{background:var(--ok);color:#fff}.btn.bad{background:var(--bad);color:#fff}
+/* quiz */
+.top{display:flex;align-items:center;gap:12px;margin:4px 0 16px}
+.top .x{width:36px;height:36px;border-radius:10px;background:var(--card);box-shadow:var(--shadow);font-size:18px;color:var(--muted)}
+.prog{flex:1;height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.prog i{display:block;height:100%;background:var(--acc);border-radius:99px;transition:width .3s}
+.top .n{font-size:13px;color:var(--muted);min-width:56px;text-align:right;font-variant-numeric:tabular-nums}
+.qhead{margin:0 0 16px}
+.tag{display:inline-flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--c);background:color-mix(in srgb,var(--c) 13%,var(--card));padding:4px 10px;border-radius:999px}
+.tag.star{--c:#e11d48}
+.qname{font-size:23px;font-weight:700;margin:10px 0 4px;line-height:1.25;letter-spacing:-.2px}
+.hint{color:var(--muted);font-size:14px}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:12px 14px;min-height:64px;transition:border-color .15s,background .15s,transform .1s;box-shadow:var(--shadow)}
+.opt:active{transform:scale(.99)}
+.opt .k{flex:none;width:28px;height:28px;border-radius:8px;background:var(--chip);display:grid;place-items:center;font-size:13px;font-weight:700;color:var(--muted)}
+.opt .f{flex:1;min-width:0;overflow-x:auto;overflow-y:hidden;padding:4px 0;font-size:19px;scrollbar-width:none}
+.opt .f::-webkit-scrollbar{display:none}
+.opt .f .katex{font-size:1em}
+.opt[aria-pressed=true]{border-color:var(--acc);background:var(--sel)}
+.opt[aria-pressed=true] .k{background:var(--acc);color:var(--acc-ink)}
+.opt.right{border-color:var(--ok);background:var(--ok-bg)}
+.opt.right .k{background:var(--ok);color:#fff}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt.wrong .k{background:var(--bad);color:#fff}
+.opt.dim{opacity:.45}
+.done .opt{cursor:default}
+.fb{margin:14px 2px 0;font-weight:700;font-size:16px;min-height:24px}
+.fb.ok{color:var(--ok)}.fb.bad{color:var(--bad)}
+.fb small{display:block;font-weight:400;color:var(--muted);font-size:13.5px;margin-top:2px}
+@keyframes shake{20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+.shake{animation:shake .35s}
+@keyframes pop{50%{transform:scale(1.02)}}
+.pop{animation:pop .3s}
+/* results */
+.big{font-size:56px;font-weight:800;text-align:center;margin:18px 0 0;letter-spacing:-1px}
+.big+p{text-align:center;color:var(--muted);margin:2px 0 18px}
+.mis{padding:12px 0;border-top:1px solid var(--line)}
+.mis:first-of-type{border-top:0}
+.mis .nm{font-size:14px;color:var(--muted);margin-bottom:4px}
+.mis .f{overflow-x:auto;font-size:17px}
+.mis .yours{font-size:13px;color:var(--bad);margin-top:4px;overflow-x:auto}
+.foot{color:var(--muted);font-size:12px;text-align:center;margin-top:20px}
+body.text .opt .f{white-space:normal;overflow:visible;font-size:17px!important}
+body.text .mis .f{font-size:16px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HOME -->
+<section id="home">
+  <h1>{{TITLE}}</h1>
+  <p class="sub">{{SUBTITLE}}</p>
+
+  <div class="panel"><div class="stats">
+    <div><b id="stLearned">0</b><span>выучено</span></div>
+    <div><b id="stTotal">0</b><span>в выборке</span></div>
+    <div><b id="stAcc">—</b><span>точность</span></div>
+  </div></div>
+
+  <div class="panel">
+    <h3>Разделы <button id="allSec">Все</button></h3>
+    <div class="chips" id="secChips"></div>
+  </div>
+
+  <div class="panel">
+    <h3>Вопросов</h3>
+    <div class="seg" id="cntSeg">
+      <button data-v="10">10</button><button data-v="20">20</button><button data-v="40">40</button><button data-v="0">Все</button>
+    </div>
+    <h3 style="margin-top:16px">Вариантов ответа</h3>
+    <div class="seg" id="optSeg">
+      <button data-v="3">3</button><button data-v="4">4</button><button data-v="5">5</button>
+    </div>
+    <h3 style="margin-top:16px">Порядок</h3>
+    <div class="seg" id="modeSeg">
+      <button data-v="smart">Трудные</button><button data-v="rand">Случайно</button><button data-v="seq">По порядку</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="row" id="starRow"><label for="swStar">{{STAR_NAME}}<small>{{STAR_HINT}}</small></label><button class="switch" id="swStar" role="switch" aria-checked="true"></button></div>
+    <div class="row"><label for="swRepeat">Повторять ошибки<small>карточка с ошибкой вернётся позже</small></label><button class="switch" id="swRepeat" role="switch" aria-checked="true"></button></div>
+  </div>
+  <button class="btn ghost" id="resetStats" style="width:100%;font-weight:500;font-size:14px;color:var(--muted)">Сбросить прогресс</button>
+  <p class="foot">{{FOOT}}</p>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" hidden>
+  <div class="top"><button class="x" id="quit" aria-label="Выйти">✕</button><div class="prog"><i id="progBar"></i></div><div class="n" id="progTxt"></div></div>
+  <div class="qhead">
+    <span class="tag" id="qTag"></span> <span class="tag star" id="qStar" hidden>{{STAR_LABEL}}</span>
+    <div class="qname" id="qName"></div>
+    <div class="hint" id="qHint">{{PROMPT}}</div>
+  </div>
+  <div class="opts" id="opts"></div>
+  <div class="fb" id="fb"></div>
+</section>
+
+<!-- RESULT -->
+<section id="result" hidden>
+  <div class="big" id="rScore"></div>
+  <p id="rText"></p>
+  <div class="panel" id="rMisPanel"><h3>Ошибки — запомни</h3><div id="rMis"></div></div>
+</section>
+
+</div>
+
+<div class="bar"><div class="in">
+  <button class="btn ghost" id="btnBack" hidden>На главную</button>
+  <button class="btn" id="btnMain">Начать</button>
+</div></div>
+
+<script>/*KATEX_JS*/</script>
+<script>
+const DATA = /*DATA*/;
+const CONFIG = /*CONFIG*/;
+const $ = id => document.getElementById(id);
+const LS = { get(k, d) { try { const v = localStorage.getItem(CONFIG.slug + '_' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+             set(k, v) { try { localStorage.setItem(CONFIG.slug + '_' + k, JSON.stringify(v)); } catch (e) {} } };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const tex = s => { if (!CONFIG.math) return esc(s); try { return katex.renderToString('\\displaystyle ' + s, { throwOnError: false, strict: false }); } catch (e) { return esc(s); } };
+const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const LETTERS = 'ABCDE';
+
+// ---------- состояние ----------
+const S = {
+  secs: LS.get('secs', DATA.sections.map((_, i) => i)),
+  cnt: LS.get('cnt', 20), opts: LS.get('opts', 4), mode: LS.get('mode', 'smart'),
+  star: LS.get('star', true), repeat: LS.get('repeat', true),
+  stats: LS.get('stats', {}), // id -> {r, w, last:[...]}
+};
+DATA.q.forEach((q, i) => q.id = q.n + '|' + q.s);
+const save = () => { ['secs', 'cnt', 'opts', 'mode', 'star', 'repeat', 'stats'].forEach(k => LS.set(k, S[k])); };
+const learned = q => { const st = S.stats[q.id]; return st && st.last && st.last.length >= 2 && st.last.slice(-2).every(Boolean); };
+const pool = () => DATA.q.filter(q => S.secs.includes(q.s) && (S.star || !q.st));
+
+// ---------- главная ----------
+function renderHome() {
+  const chips = $('secChips'); chips.innerHTML = '';
+  DATA.sections.forEach((s, i) => {
+    const n = DATA.q.filter(q => q.s === i && (S.star || !q.st)).length;
+    const b = document.createElement('button'); b.className = 'chip'; b.style.setProperty('--c', s.c);
+    b.setAttribute('aria-pressed', S.secs.includes(i)); b.innerHTML = `<span class="dot"></span>${esc(s.t)} <small>${n}</small>`;
+    b.onclick = () => { S.secs = S.secs.includes(i) ? S.secs.filter(x => x !== i) : [...S.secs, i].sort((a, b) => a - b); save(); renderHome(); };
+    chips.appendChild(b);
+  });
+  $('allSec').textContent = S.secs.length === DATA.sections.length ? 'Снять все' : 'Все';
+  for (const [id, key] of [['cntSeg', 'cnt'], ['optSeg', 'opts'], ['modeSeg', 'mode']])
+    $(id).querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(S[key]) === b.dataset.v));
+  $('swStar').setAttribute('aria-checked', S.star); $('swRepeat').setAttribute('aria-checked', S.repeat);
+  const p = pool(); const all = DATA.q.filter(q => S.star || !q.st);
+  let r = 0, w = 0; Object.values(S.stats).forEach(s => { r += s.r; w += s.w; });
+  $('stLearned').textContent = `${all.filter(learned).length}/${all.length}`;
+  $('stTotal').textContent = p.length;
+  $('stAcc').textContent = r + w ? Math.round(100 * r / (r + w)) + '%' : '—';
+  $('btnMain').disabled = !p.length; $('btnMain').textContent = 'Начать'; $('btnMain').className = 'btn';
+  $('btnBack').hidden = true;
+}
+$('allSec').onclick = () => { S.secs = S.secs.length === DATA.sections.length ? [] : DATA.sections.map((_, i) => i); save(); renderHome(); };
+for (const [id, key, num] of [['cntSeg', 'cnt', 1], ['optSeg', 'opts', 1], ['modeSeg', 'mode', 0]])
+  $(id).onclick = e => { const b = e.target.closest('button'); if (!b) return; S[key] = num ? +b.dataset.v : b.dataset.v; save(); renderHome(); };
+$('swStar').onclick = () => { S.star = !S.star; save(); renderHome(); };
+$('swRepeat').onclick = () => { S.repeat = !S.repeat; save(); renderHome(); };
+$('resetStats').onclick = e => {
+  const b = e.currentTarget;
+  if (b.dataset.confirm) { S.stats = {}; save(); renderHome(); b.textContent = 'Сбросить прогресс'; delete b.dataset.confirm; }
+  else { b.dataset.confirm = 1; b.textContent = 'Нажми ещё раз, чтобы сбросить'; setTimeout(() => { b.textContent = 'Сбросить прогресс'; delete b.dataset.confirm; }, 3000); }
+};
+
+// ---------- квиз ----------
+let Q = null; // {list, i, picked, revealed, right, wrongs:[], total}
+function weight(q) { const st = S.stats[q.id]; if (!st) return 2; return 1 + st.w * 2 - (learned(q) ? 1.5 : 0) + Math.random(); }
+function start(list) {
+  let p = list || pool();
+  if (!list) {
+    if (S.mode === 'seq') p = p.slice();
+    else if (S.mode === 'rand') p = shuffle(p.slice());
+    else p = shuffle(p.slice()).map(q => [weight(q) + Math.random() * 1.5, q]).sort((a, b) => b[0] - a[0]).map(x => x[1]);
+    if (S.cnt) p = p.slice(0, S.cnt);
+    if (S.mode === 'smart') shuffle(p);
+  }
+  Q = { list: p.map(q => ({ q })), i: 0, right: 0, wrongs: [], total: p.length };
+  show('quiz'); renderQ();
+}
+function makeOptions(q) {
+  const k = Math.min(S.opts - 1, q.d.length);
+  const opts = shuffle(q.d.slice()).slice(0, k).map(f => ({ f, ok: false }));
+  opts.push({ f: q.f, ok: true });
+  return shuffle(opts);
+}
+function renderQ() {
+  const item = Q.list[Q.i], q = item.q, sec = DATA.sections[q.s];
+  item.opts = item.opts || makeOptions(q);
+  Q.picked = null; Q.revealed = false;
+  $('progBar').style.width = (100 * Q.i / Q.list.length) + '%';
+  $('progTxt').textContent = `${Q.i + 1} / ${Q.list.length}`;
+  const tag = $('qTag'); tag.textContent = sec.t; tag.style.setProperty('--c', sec.c);
+  $('qStar').hidden = !q.st;
+  $('qName').textContent = q.n;
+  $('qHint').textContent = item.again ? '↻ Повтор: здесь ты уже ошибался(ась)' : CONFIG.prompt;
+  const box = $('opts'); box.innerHTML = ''; box.classList.remove('done');
+  item.opts.forEach((o, j) => {
+    const b = document.createElement('button'); b.className = 'opt'; b.setAttribute('aria-pressed', 'false');
+    b.innerHTML = `<span class="k">${LETTERS[j]}</span><span class="f">${tex(o.f)}</span>`;
+    b.onclick = () => pick(j);
+    box.appendChild(b);
+  });
+  fitFormulas(box);
+  $('fb').textContent = ''; $('fb').className = 'fb';
+  const m = $('btnMain'); m.textContent = 'Ответить'; m.disabled = true; m.className = 'btn';
+  $('btnBack').hidden = true;
+  window.scrollTo({ top: 0 });
+}
+function fitFormulas(root) {
+  if (!CONFIG.math) return;
+  requestAnimationFrame(() => root.querySelectorAll('.f').forEach(el => {
+    let size = 19; el.style.fontSize = size + 'px';
+    while (el.scrollWidth > el.clientWidth + 1 && size > 12) { size -= 1; el.style.fontSize = size + 'px'; }
+  }));
+}
+function pick(j) {
+  if (Q.revealed) return;
+  Q.picked = j;
+  $('opts').querySelectorAll('.opt').forEach((b, k) => b.setAttribute('aria-pressed', k === j));
+  $('btnMain').disabled = false;
+}
+function reveal() {
+  const item = Q.list[Q.i], q = item.q, opts = item.opts;
+  Q.revealed = true;
+  const ok = opts[Q.picked].ok;
+  const btns = $('opts').querySelectorAll('.opt'); $('opts').classList.add('done');
+  btns.forEach((b, k) => {
+    b.setAttribute('aria-pressed', 'false');
+    if (opts[k].ok) { b.classList.add('right'); if (ok) b.classList.add('pop'); }
+    else if (k === Q.picked) b.classList.add('wrong', 'shake');
+    else b.classList.add('dim');
+  });
+  const st = S.stats[q.id] = S.stats[q.id] || { r: 0, w: 0, last: [] };
+  if (!item.again || ok) { ok ? st.r++ : st.w++; }
+  st.last = [...st.last, ok].slice(-3);
+  const fb = $('fb');
+  if (ok) { Q.right += item.again ? 0 : 1; fb.className = 'fb ok'; fb.innerHTML = 'Верно! ✓'; }
+  else {
+    fb.className = 'fb bad'; fb.innerHTML = 'Неверно — правильная подсвечена зелёным' + (S.repeat && !item.again ? '<small>Эта карточка вернётся через несколько вопросов</small>' : '');
+    if (!item.again) Q.wrongs.push({ q, yours: opts[Q.picked].f });
+    if (S.repeat && !item.again) { const pos = Math.min(Q.list.length, Q.i + 3 + (Math.random() * 3 | 0)); Q.list.splice(pos, 0, { q, again: true }); }
+  }
+  save();
+  const m = $('btnMain'); m.textContent = Q.i + 1 < Q.list.length ? 'Далее →' : 'Результат'; m.className = 'btn ' + (ok ? 'ok' : 'bad'); m.disabled = false;
+}
+function next() { Q.i++; if (Q.i < Q.list.length) renderQ(); else results(); }
+function results() {
+  show('result');
+  const pct = Math.round(100 * Q.right / Q.total);
+  $('rScore').textContent = pct + '%';
+  $('rText').textContent = `С первого раза: ${Q.right} из ${Q.total}` + (pct === 100 ? ' — идеально!' : pct >= 80 ? ' — отлично!' : pct >= 50 ? ' — неплохо, повтори ошибки' : ' — стоит повторить');
+  const box = $('rMis'); box.innerHTML = '';
+  $('rMisPanel').hidden = !Q.wrongs.length;
+  Q.wrongs.forEach(w => {
+    const d = document.createElement('div'); d.className = 'mis';
+    d.innerHTML = `<div class="nm">${esc(w.q.n)}</div><div class="f">${tex(w.q.f)}</div><div class="yours">твой ответ: ${tex(w.yours)}</div>`;
+    box.appendChild(d);
+  });
+  const m = $('btnMain'); m.className = 'btn';
+  m.textContent = Q.wrongs.length ? `Повторить ошибки (${Q.wrongs.length})` : 'Ещё раз';
+  $('btnBack').hidden = false;
+}
+function show(id) { ['home', 'quiz', 'result'].forEach(s => $(s).hidden = s !== id); }
+
+$('btnMain').onclick = () => {
+  if (!$('home').hidden) return start();
+  if (!$('quiz').hidden) return Q.revealed ? next() : (Q.picked != null && reveal());
+  if (!$('result').hidden) return Q.wrongs.length ? start(shuffle(Q.wrongs.map(w => w.q))) : start();
+};
+$('btnBack').onclick = () => { show('home'); renderHome(); };
+$('quit').onclick = () => { show('home'); renderHome(); };
+document.addEventListener('keydown', e => {
+  if ($('quiz').hidden) { if (e.key === 'Enter' && !$('btnMain').disabled) $('btnMain').click(); return; }
+  const n = '12345'.indexOf(e.key), l = 'abcdeфисву'.indexOf(e.key.toLowerCase()) % 5;
+  if (n >= 0 && n < Q.list[Q.i].opts.length) pick(n);
+  else if (e.key.length === 1 && l >= 0 && !e.ctrlKey && l < Q.list[Q.i].opts.length) pick(l);
+  else if ((e.key === 'Enter' || e.key === ' ') && !$('btnMain').disabled) { e.preventDefault(); $('btnMain').click(); }
+});
+addEventListener('resize', () => { if (!$('quiz').hidden) fitFormulas($('opts')); });
+
+if (!DATA.q.some(q => q.st)) $('starRow').hidden = true;
+if (!CONFIG.math) document.body.classList.add('text');
+renderHome();
+if ('serviceWorker' in navigator && location.protocol === 'https:') { try { navigator.serviceWorker.register('sw.js').catch(() => {}); } catch (e) {} }
+</script>
+</body>
+</html>
