@@ -1,6 +1,6 @@
 # Формулы по физике — тренажёр ЕГЭ (PWA)
 
-Сайт: formuly.egehelp.workers.dev (Cloudflare Workers, обновляется сам после каждого push в `main`).
+Сайт: www.formuly.egehelp.workers.dev (Cloudflare Workers, обновляется сам после каждого push в `main`).
 
 Название формулы → выбери правильную из 3–5 похожих. 174 формулы по кодификатору ЕГЭ-2027 и сводке А. А. Суслова.
 
